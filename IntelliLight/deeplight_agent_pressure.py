@@ -22,14 +22,14 @@ from network_agent import NetworkAgent, conv2d_bn, Selector, State
 MEMO = "Deeplight"
 
 
-class DeeplightAgent(NetworkAgent):
+class DeeplightAgentPressure(NetworkAgent):
 
     def __init__(self,
                  num_phases,
                  num_actions,
                  path_set):
 
-        super(DeeplightAgent, self).__init__(
+        super(DeeplightAgentPressure, self).__init__(
             num_phases=num_phases,
             path_set=path_set)
 
@@ -342,3 +342,65 @@ class DeeplightAgent(NetworkAgent):
         sample_weight_np = np.array(sample_weight)
         sample_weight_np = np.power(sample_weight_np + pos_constant, alpha) / sample_weight_np.sum()
         return sample_weight_np
+
+
+    def distanceImportance(self, distance):
+        return (-1/(1+np.exp(-distance + 10))) + 1
+
+    def choose(self, count, if_pretrain):
+        # q_values = self.q_network.predict(self.convert_state_to_input(self.state))
+        mapOfCars = self.state.map_feature[0]
+
+        cardinal_nums_positive = [0] * 4
+        cardinal_nums_negative = [0] * 4
+
+        for x in range(len(mapOfCars)):
+            for y in range(len(mapOfCars[0])):
+
+                if mapOfCars[x][y][0] == 1:
+                    if (y > 77 and x < 75):
+                        cardinal_nums_positive[0] += self.distanceImportance(y - 77)
+                    elif (x > 77 and y > 75):
+                        cardinal_nums_positive[1] += self.distanceImportance(x - 77)
+                    elif (y < 70 and x > 75):
+                        cardinal_nums_positive[2] += self.distanceImportance(70 - y)
+                    elif (x < 70 and y < 75):
+                        cardinal_nums_positive[3] += self.distanceImportance(70 - x)
+
+                    if (y > 77 and x > 75):
+                        cardinal_nums_negative[0] += self.distanceImportance(y - 77)
+                    elif (x > 77 and y < 75):
+                        cardinal_nums_negative[1] += self.distanceImportance(x - 77)
+                    elif (y < 70 and x < 75):
+                        cardinal_nums_negative[2] += self.distanceImportance(70 - y)
+                    elif (x < 70 and y > 75):
+                        cardinal_nums_negative[3] += self.distanceImportance(70 - x)
+                    # print(x, ",", y)
+
+        print("N, E, S, W")
+        print(cardinal_nums_positive)
+        print(cardinal_nums_negative)
+
+        pressures = [max(x - y, 0) for x,y in zip(cardinal_nums_positive, cardinal_nums_negative)]
+
+
+        NS_pressure = max(pressures[0] + pressures[2],0)
+        EW_pressure = max(pressures[1] + pressures[3],0)
+
+        best_phase = int((NS_pressure - EW_pressure) < 0)
+
+
+        print(NS_pressure)
+        print(EW_pressure)
+        print(best_phase)
+        print("END")
+
+        if self.state.cur_phase != best_phase:
+            action = 1
+        else:
+            action = 0
+
+        # if NS_pressure == EW_pressure:
+        #     action = 0
+
+        return action, [0,0]

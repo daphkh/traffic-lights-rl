@@ -1,1 +1,0 @@
-time = 20	action = 0	current_phase = 0	next_phase = 1	reward = -0.300490	array([[-0.9937369 , -0.08313412]], dtype=float32)

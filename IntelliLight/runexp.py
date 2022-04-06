@@ -24,8 +24,8 @@ list_traffic_files = [
 ]
 
 list_model_name = [
-                   # "Deeplight",
-                   "Pressure",
+                   "Deeplight",
+                   # "Pressure",
                    ]
 
 # ================================= only change these two ========================================

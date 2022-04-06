@@ -283,8 +283,7 @@ def calculate_reward(tempLastVehicleStateList):
     PI = waitedTime/len(tempLastVehicleStateList) if len(tempLastVehicleStateList)!=0 else 0
     return - PI
 
-def distanceImportance(distance):
-    return (-1/(1+np.exp(-distance + 5))) + 1
+
 
 def getMapOfVehicles(area_length=600):
     '''
@@ -300,42 +299,11 @@ def getMapOfVehicles(area_length=600):
     cardinal_nums_positive = [0] * 4
     cardinal_nums_negative = [0] * 4
 
-    print("BEGINNING")
     for vehicle_id in vehicle_id_list:
         vehicle_position = traci.vehicle.getPosition(vehicle_id)  # (double,double),tuple
         # print(vehicle_position)
         transform_tuple = vehicle_location_mapper(vehicle_position)  # call the function
         mapOfCars[transform_tuple[0], transform_tuple[1]] = 1
-
-    for x in range(len(mapOfCars)):
-        for y in range(len(mapOfCars[0])):
-            if mapOfCars[x][y] == 1:
-                if (y > 78 and x < 75):
-                    print(y - 78)
-                    print(distanceImportance(y - 78))
-                    cardinal_nums_positive[0] += distanceImportance(y - 78)
-                elif (x > 78 and y > 75):
-                    cardinal_nums_positive[1] += distanceImportance(x - 78)
-                elif (y < 70 and x > 75):
-                    cardinal_nums_positive[2] += distanceImportance(70 - y)
-                elif (x < 70 and y < 75):
-                    cardinal_nums_positive[3] += distanceImportance(70 - x)
-
-                if (y > 78 and x > 75):
-                    cardinal_nums_negative[0] += distanceImportance(y - 78)
-                elif (x > 78 and y < 75):
-                    cardinal_nums_negative[1] += distanceImportance(x - 78)
-                elif (y < 70 and x < 75):
-                    cardinal_nums_negative[2] += distanceImportance(70 - y)
-                elif (x < 70 and y > 75):
-                    cardinal_nums_negative[3] += distanceImportance(70 - x)
-                # print(x, ",", y)
-
-    print("N, E, S, W")
-    print(cardinal_nums_positive)
-    print(cardinal_nums_negative)
-    print("END")
-
 
     #
 

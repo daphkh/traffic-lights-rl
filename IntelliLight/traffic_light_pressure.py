@@ -21,16 +21,16 @@ import os
 import time
 import math
 import map_computor as map_computor
-from deeplight_agent import DeeplightAgent
+from deeplight_agent_pressure import DeeplightAgentPressure
 
 from sumo_agent import SumoAgent
 import xml.etree.ElementTree as ET
 
 
-class TrafficLightDQN:
+class TrafficLightPressure:
 
     DIC_AGENTS = {
-        "Deeplight": DeeplightAgent,
+        "Deeplight": DeeplightAgentPressure,
     }
 
     NO_PRETRAIN_AGENTS = []
@@ -223,9 +223,10 @@ class TrafficLightDQN:
             current_time = s_agent.get_current_time()  # in seconds
 
             if not if_pretrain:
+                pass
                 # update network
-                self.agent.update_network(if_pretrain, use_average, current_time)
-                self.agent.update_network_bar()
+                # self.agent.update_network(if_pretrain, use_average, current_time)
+                # self.agent.update_network_bar()
 
         if if_pretrain:
             self.agent.set_update_outdated()
@@ -237,8 +238,7 @@ class TrafficLightDQN:
 
 def main(memo, f_prefix, sumo_cmd_str, sumo_cmd_pretrain_str):
 
-    player = TrafficLightDQN(memo, f_prefix)
+    player = TrafficLightPressure(memo, f_prefix)
     player.set_traffic_file()
-    player.train(sumo_cmd_pretrain_str, if_pretrain=True, use_average=True)
+    # player.train(sumo_cmd_pretrain_str, if_pretrain=True, use_average=True)
     player.train(sumo_cmd_str, if_pretrain=False, use_average=False)
-

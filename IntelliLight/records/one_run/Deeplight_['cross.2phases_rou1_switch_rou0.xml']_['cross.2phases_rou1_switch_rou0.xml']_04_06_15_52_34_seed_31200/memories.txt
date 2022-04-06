@@ -1,0 +1,8 @@
+time = 20	action = 0	current_phase = 0	next_phase = 1	reward = 0.079642	array([[-1.0011338 , -0.16246393]], dtype=float32)
+time = 25	action = 0	current_phase = 0	next_phase = 1	reward = 0.635482	array([[-1.0058856, -0.1489616]], dtype=float32)
+time = 30	action = 1	current_phase = 0	next_phase = 1	reward = -1.537440	array([[-1.003645  , -0.14799449]], dtype=float32)
+time = 38	action = 0	current_phase = 1	next_phase = 0	reward = -2.587767	array([[1.0550423, 0.5902105]], dtype=float32)
+time = 43	action = 1	current_phase = 1	next_phase = 0	reward = -3.288496	array([[1.0418618 , 0.59609306]], dtype=float32)
+time = 51	action = 0	current_phase = 0	next_phase = 1	reward = 1.474690	array([[-0.9922758 , -0.16539359]], dtype=float32)
+time = 56	action = 1	current_phase = 0	next_phase = 1	reward = -1.000000	array([[-0.9834998 , -0.16864796]], dtype=float32)
+time = 64	action = 0	current_phase = 1	next_phase = 0	reward = 0.000000	array([[1.0553569, 0.5705181]], dtype=float32)

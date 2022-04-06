@@ -40,7 +40,7 @@ if platform == "linux" or platform == "linux2":# this is linux
             raise EnvironmentError("Please set SUMO_HOME environment variable or install traci as python module!")
 
 elif platform == "win32":
-    os.environ['SUMO_HOME'] = 'C:\\Program Files (x86)\\DLR\\Sumo'
+    os.environ['SUMO_HOME'] = 'C:\\Users\\CSung\\Desktop\\CIS522Project\\sumo-win64-0.32.0\\sumo-0.32.0'
 
     try:
         import traci
@@ -104,14 +104,15 @@ listLanes=['edge1-0_0','edge1-0_1','edge1-0_2','edge2-0_0','edge2-0_1','edge2-0_
                                  'edge3-0_0','edge3-0_1','edge3-0_2','edge4-0_0','edge4-0_1','edge4-0_2']
 '''
 input: phase "NSG_SNG" , four lane number, in the key of W,E,S,N
-output: 
+output:
 1.affected lane number: 4_0_0, 4_0_1, 3_0_0, 3_0_1
-# 2.destination lane number, 0_3_0,0_3_1  
+# 2.destination lane number, 0_3_0,0_3_1
 
 '''
 
 
 def start_sumo(sumo_cmd_str):
+    # print(sumo_cmd_str)
     traci.start(sumo_cmd_str)
     for i in range(20):
         traci.simulationStep()
@@ -282,6 +283,9 @@ def calculate_reward(tempLastVehicleStateList):
     PI = waitedTime/len(tempLastVehicleStateList) if len(tempLastVehicleStateList)!=0 else 0
     return - PI
 
+def distanceImportance(distance):
+    return (-1/(1+np.exp(-distance + 5))) + 1
+
 def getMapOfVehicles(area_length=600):
     '''
     get the vehicle positions as NIPS paper
@@ -292,11 +296,49 @@ def getMapOfVehicles(area_length=600):
     mapOfCars = np.zeros((length_num_grids, length_num_grids))
 
     vehicle_id_list = traci.vehicle.getIDList()
+
+    cardinal_nums_positive = [0] * 4
+    cardinal_nums_negative = [0] * 4
+
+    print("BEGINNING")
     for vehicle_id in vehicle_id_list:
         vehicle_position = traci.vehicle.getPosition(vehicle_id)  # (double,double),tuple
-
+        # print(vehicle_position)
         transform_tuple = vehicle_location_mapper(vehicle_position)  # call the function
         mapOfCars[transform_tuple[0], transform_tuple[1]] = 1
+
+    for x in range(len(mapOfCars)):
+        for y in range(len(mapOfCars[0])):
+            if mapOfCars[x][y] == 1:
+                if (y > 78 and x < 75):
+                    print(y - 78)
+                    print(distanceImportance(y - 78))
+                    cardinal_nums_positive[0] += distanceImportance(y - 78)
+                elif (x > 78 and y > 75):
+                    cardinal_nums_positive[1] += distanceImportance(x - 78)
+                elif (y < 70 and x > 75):
+                    cardinal_nums_positive[2] += distanceImportance(70 - y)
+                elif (x < 70 and y < 75):
+                    cardinal_nums_positive[3] += distanceImportance(70 - x)
+
+                if (y > 78 and x > 75):
+                    cardinal_nums_negative[0] += distanceImportance(y - 78)
+                elif (x > 78 and y < 75):
+                    cardinal_nums_negative[1] += distanceImportance(x - 78)
+                elif (y < 70 and x < 75):
+                    cardinal_nums_negative[2] += distanceImportance(70 - y)
+                elif (x < 70 and y > 75):
+                    cardinal_nums_negative[3] += distanceImportance(70 - x)
+                # print(x, ",", y)
+
+    print("N, E, S, W")
+    print(cardinal_nums_positive)
+    print(cardinal_nums_negative)
+    print("END")
+
+
+    #
+
 
     return mapOfCars
 

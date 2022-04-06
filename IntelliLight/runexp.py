@@ -24,7 +24,8 @@ list_traffic_files = [
 ]
 
 list_model_name = [
-                   "Deeplight",
+                   # "Deeplight",
+                   "Pressure",
                    ]
 
 # ================================= only change these two ========================================
@@ -42,25 +43,27 @@ set_random_seed((SEED))
 import json
 import os
 import traffic_light_dqn
+import traffic_light_pressure
 import time
 print("post installs")
 
 PATH_TO_CONF = os.path.join("conf", setting_memo)
 
+
 print("post path")
-sumoBinary = r"/usr/bin/sumo-gui"
+sumoBinary = r"C:\Users\CSung\Desktop\CIS522Project\sumo-win64-0.32.0\sumo-0.32.0\bin\sumo-gui.exe"
 sumoCmd = [sumoBinary,
            '-c',
-           r'{0}/data/{1}/cross.sumocfg'.format(os.path.split(os.path.realpath(__file__))[0], setting_memo)]
+           r'{0}\\data\\{1}\\cross.sumocfg'.format(os.path.split(os.path.realpath(__file__))[0], setting_memo)]
 sumoCmd_pretrain = [sumoBinary,
                     '-c',
                     r'{0}/data/{1}/cross_pretrain.sumocfg'.format(
                         os.path.split(os.path.realpath(__file__))[0], setting_memo)]
 
-sumoBinary_nogui = r"/usr/bin/sumo"
+sumoBinary_nogui = r"C:\Users\CSung\Desktop\CIS522Project\sumo-win64-0.32.0\sumo-0.32.0\bin\sumo.exe"
 sumoCmd_nogui = [sumoBinary_nogui,
                  '-c',
-                 r'{0}/data/{1}/cross.sumocfg'.format(
+                 r'{0}\\data\\{1}\\cross.sumocfg'.format(
                      os.path.split(os.path.realpath(__file__))[0], setting_memo)]
 sumoCmd_nogui_pretrain = [sumoBinary_nogui,
                           '-c',
@@ -99,10 +102,8 @@ for model_name in list_model_name:
             time.strftime('%m_%d_%H_%M_%S_', time.localtime(time.time())) + "seed_%d" % SEED
         )
 
-        traffic_light_dqn.main(memo=setting_memo, f_prefix=prefix, sumo_cmd_str=sumoCmd_nogui, sumo_cmd_pretrain_str=sumoCmd_nogui_pretrain)
+# sumoCmd_nogui, sumoCmd_nogui_pretrain
+        traffic_light_pressure.main(memo=setting_memo, f_prefix=prefix, sumo_cmd_str=sumoCmd, sumo_cmd_pretrain_str=sumoCmd_pretrain)
 
         print("finished {0}".format(traffic_file))
     print ("finished {0}".format(model_name))
-
-
-

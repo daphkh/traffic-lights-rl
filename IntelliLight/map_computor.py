@@ -303,7 +303,10 @@ def getMapOfVehicles(area_length=600):
         vehicle_position = traci.vehicle.getPosition(vehicle_id)  # (double,double),tuple
         # print(vehicle_position)
         transform_tuple = vehicle_location_mapper(vehicle_position)  # call the function
-        mapOfCars[transform_tuple[0], transform_tuple[1]] = 1
+        if traci.vehicle.getTypeID(vehicle_id) == "TrafficCar":
+            mapOfCars[transform_tuple[0], transform_tuple[1]] = 1
+        else:
+            mapOfCars[transform_tuple[0], transform_tuple[1]] = .5
 
     #
 
@@ -348,11 +351,13 @@ def get_rewards_from_sumo(vehicle_dict, action, rewards_info_dict,
 
     reward_detail_dict['queue_length'].append(get_overall_queue_length(listLanes))
     reward_detail_dict['wait_time'].append(get_overall_waiting_time(listLanes))
+    reward_detail_dict['wait_time_priority'] = [False,-0.08, get_prioritized_waiting_time(vehicle_dict)]
     reward_detail_dict['delay'].append(get_overall_delay(listLanes))
     reward_detail_dict['emergency'].append(get_num_of_emergency_stops(vehicle_dict))
     reward_detail_dict['duration'].append(get_travel_time_duration(vehicle_dict, vehicle_id_entering_list))
     reward_detail_dict['flickering'].append(get_flickering(action))
     reward_detail_dict['partial_duration'].append(get_partial_travel_time_duration(vehicle_dict, vehicle_id_entering_list))
+
 
     vehicle_id_list = traci.vehicle.getIDList()
     reward_detail_dict['num_of_vehicles_in_system'] = [False, 0, len(vehicle_id_list)]
@@ -364,6 +369,8 @@ def get_rewards_from_sumo(vehicle_dict, action, rewards_info_dict,
 
     reward_detail_dict['num_of_vehicles_left'].append(len(vehicle_id_leaving))
     reward_detail_dict['duration_of_vehicles_left'].append(get_travel_time_duration(vehicle_dict, vehicle_id_leaving))
+    reward_detail_dict['duration_of_vehicles_left_priority'] = [False,reward_detail_dict['duration_of_vehicles_left'][1],
+                                                                get_travel_time_duration_priority(vehicle_dict, vehicle_id_leaving)]
 
 
 
@@ -373,11 +380,11 @@ def get_rewards_from_sumo(vehicle_dict, action, rewards_info_dict,
     reward = restrict_reward(reward)#,func="linear")
     return reward, reward_detail_dict
 
-def get_rewards_from_dict_list(rewards_detail_dict_list):
+def get_rewards_from_dict_list(rewards_detail_dict_list, equity_reward=False):
     reward = 0
     for i in range(len(rewards_detail_dict_list)):
         for k, v in rewards_detail_dict_list[i].items():
-            if v[0]:  # True or False
+            if v[0] or (equity_reward == True and "priority" in k):  # True or False
                 reward += v[1] * v[2]
     reward = restrict_reward(reward)
     return reward
@@ -387,6 +394,17 @@ def get_overall_queue_length(listLanes):
     for lane in listLanes:
         overall_queue_length += traci.lane.getLastStepHaltingNumber(lane)
     return overall_queue_length
+
+def get_prioritized_waiting_time(vehicle_dict):
+    vehicle_id_list = traci.vehicle.getIDList()
+
+    prioritized_wait_time = 0
+    for vehicle_id in vehicle_id_list:
+
+        if (traci.vehicle.getTypeID(vehicle_id) == "TrafficCar"):
+            # print(traci.vehicle.getWaitingTime(vehicle_id))
+            prioritized_wait_time += traci.vehicle.getWaitingTime(vehicle_id) / 60.0
+    return prioritized_wait_time
 
 def get_overall_waiting_time(listLanes):
     overall_waiting_time = 0
@@ -438,6 +456,16 @@ def get_travel_time_duration(vehicle_dict, vehicle_id_list):
     travel_time_duration = 0
     for vehicle_id in vehicle_id_list:
         if (vehicle_id in vehicle_dict.keys()):
+            travel_time_duration += (traci.simulation.getCurrentTime() / 1000 - vehicle_dict[vehicle_id].enter_time)/60.0
+    if len(vehicle_id_list) > 0:
+        return travel_time_duration#/len(vehicle_id_list)
+    else:
+        return 0
+
+def get_travel_time_duration_priority(vehicle_dict, vehicle_id_list):
+    travel_time_duration = 0
+    for vehicle_id in vehicle_id_list:
+        if (vehicle_id in vehicle_dict.keys() and traci.vehicle.getTypeID(vehicle_id) == "TrafficCar"):
             travel_time_duration += (traci.simulation.getCurrentTime() / 1000 - vehicle_dict[vehicle_id].enter_time)/60.0
     if len(vehicle_id_list) > 0:
         return travel_time_duration#/len(vehicle_id_list)

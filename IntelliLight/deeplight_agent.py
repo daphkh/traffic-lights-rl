@@ -8,11 +8,11 @@ Deep reinforcement learning agent
 '''
 
 import numpy as np
-from keras.layers import Input, Dense, Conv2D, Flatten, BatchNormalization, Activation, Multiply, Add
-from keras.models import Model, model_from_json, load_model
-from keras.optimizers import RMSprop
-from keras.callbacks import EarlyStopping, TensorBoard
-from keras.layers.merge import concatenate, add
+from tensorflow.keras.layers import Input, Dense, Conv2D, Flatten, BatchNormalization, Activation, Multiply, Add
+from tensorflow.keras.models import Model, model_from_json, load_model
+from tensorflow.keras.optimizers import RMSprop
+from tensorflow.keras.callbacks import EarlyStopping, TensorBoard
+from tensorflow.keras.layers import concatenate
 import random
 import os
 
@@ -236,7 +236,7 @@ class DeeplightAgent(NetworkAgent):
         hist = self.q_network.fit(Xs, Y, batch_size=batch_size, epochs=epochs,
                                   shuffle=False,
                                   verbose=2, validation_split=0.3, callbacks=[early_stopping])
-        self.save_model(prefix)
+        # self.save_model(prefix)
 
     def update_network(self, if_pretrain, use_average, current_time):
 

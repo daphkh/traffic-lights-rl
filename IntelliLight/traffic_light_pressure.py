@@ -30,7 +30,7 @@ import xml.etree.ElementTree as ET
 class TrafficLightPressure:
 
     DIC_AGENTS = {
-        "Deeplight": DeeplightAgentPressure,
+        "Pressure": DeeplightAgentPressure
     }
 
     NO_PRETRAIN_AGENTS = []
@@ -167,9 +167,14 @@ class TrafficLightPressure:
                             self.path_set)
         current_time = s_agent.get_current_time()  # in seconds
 
+        total_final_travel_times_overall = 0
+        total_final_travel_times_priority = 0
+
+        rewards_detail_dict_list = None
+
         # start experiment
         while current_time < total_run_cnt:
-
+            print(current_time, " , ", total_run_cnt)
             if if_pretrain:
                 if current_time > pre_train_count_per_ratio:
                     print("Terminal occured. Episode end.")
@@ -201,7 +206,7 @@ class TrafficLightPressure:
                 action_pred, q_values = self.agent.choose(count=current_time, if_pretrain=if_pretrain)
 
             # get reward from sumo agent
-            reward, action = s_agent.take_action(action_pred)
+            reward, action, rewards_detail_dict_list = s_agent.take_action(action_pred)
 
             # get next state
             next_state = s_agent.get_observation()
@@ -210,14 +215,25 @@ class TrafficLightPressure:
             # remember
             self.agent.remember(state, action, reward, next_state)
 
+
+
+            # print(memory_str)
+            total_final_travel_times_overall += sum([thing["duration_of_vehicles_left"][-1] for thing in rewards_detail_dict_list])
+            total_final_travel_times_priority += sum([thing["duration_of_vehicles_left_priority"][-1] for thing in rewards_detail_dict_list])
+            # print("Length", len(rewards_detail_dict_list))
+            # print("Priority wait time:", rewards_detail_dict_list[-1]['wait_time_priority'][-1])
+            print("Overall Final Travel Time:", total_final_travel_times_overall)
+            print("Priority Final Travel Time:", total_final_travel_times_priority)
+
             # output to std out and file
-            memory_str = 'time = %d\taction = %d\tcurrent_phase = %d\tnext_phase = %d\treward = %f' \
-                         '\t%s' \
+            memory_str = 'time = {%d}\taction = {%d}\tcurrent_phase = {%d}\tnext_phase = {%d}\treward = {%f}' \
+                         '\t{%s} overall travel time = {%d} priority travel time = {%d}' \
                          % (current_time, action,
                             state.cur_phase[0][0],
                             state.next_phase[0][0],
-                            reward, repr(q_values))
-            print(memory_str)
+                            reward, repr(q_values), total_final_travel_times_overall,
+                            total_final_travel_times_priority)
+
             f_memory.write(memory_str + "\n")
             f_memory.close()
             current_time = s_agent.get_current_time()  # in seconds
@@ -233,12 +249,18 @@ class TrafficLightPressure:
             self.agent.update_network(if_pretrain, use_average, current_time)
             self.agent.update_network_bar()
         self.agent.reset_update_count()
+
+        total_final_travel_times_overall += rewards_detail_dict_list[-1]['wait_time'][-1]
+        total_final_travel_times_priority += rewards_detail_dict_list[-1]['wait_time_priority'][-1]
+        print("Overall Final Travel Time:", total_final_travel_times_overall)
+        print("Priority Final Travel Time:", total_final_travel_times_priority)
         print("END")
 
+        return total_final_travel_times_overall, total_final_travel_times_priority
 
-def main(memo, f_prefix, sumo_cmd_str, sumo_cmd_pretrain_str):
+def main(memo, f_prefix, sumo_cmd_str, sumo_cmd_str_gui, sumo_cmd_pretrain_str, sumo_cmd_pretrain_str_gui):
 
     player = TrafficLightPressure(memo, f_prefix)
     player.set_traffic_file()
     # player.train(sumo_cmd_pretrain_str, if_pretrain=True, use_average=True)
-    player.train(sumo_cmd_str, if_pretrain=False, use_average=False)
+    return player.train(sumo_cmd_str, if_pretrain=False, use_average=False)

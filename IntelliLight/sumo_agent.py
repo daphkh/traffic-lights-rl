@@ -90,7 +90,7 @@ class SumoAgent:
     def get_current_phase(self):
         return self.current_phase
 
-    def take_action(self, action):
+    def take_action(self, action, equity_reward = False):
         current_phase_number = self.get_current_phase()
         rewards_detail_dict_list = []
         if (self.current_phase_duration < self.para_set.MIN_PHASE_TIME[current_phase_number]):
@@ -109,13 +109,13 @@ class SumoAgent:
                                                                                rewards_detail_dict_list=rewards_detail_dict_list)  # run 1s SUMO
 
         #reward, reward_detail_dict = self.cal_reward(action)
-        reward = self.cal_reward_from_list(rewards_detail_dict_list)
+        reward = self.cal_reward_from_list(rewards_detail_dict_list, equity_reward)
         #self.update_vehicles()
         self.update_state()
 
-        return reward, action
+        return reward, action, rewards_detail_dict_list
 
-    def take_action_pre_train(self, phase_time_now):
+    def take_action_pre_train(self, phase_time_now, equity_reward = False):
         current_phase_number = self.get_current_phase()
         rewards_detail_dict_list = []
         if (self.current_phase_duration < phase_time_now[current_phase_number]):
@@ -134,7 +134,7 @@ class SumoAgent:
                                                                                rewards_info_dict=self.para_set.REWARDS_INFO_DICT,
                                                                                f_log_rewards=self.f_log_rewards,
                                                                                rewards_detail_dict_list=rewards_detail_dict_list)  # run 1s SUMO
-        reward = self.cal_reward_from_list(rewards_detail_dict_list)
+        reward = self.cal_reward_from_list(rewards_detail_dict_list, equity_reward)
 
         #self.update_vehicles()
         self.update_state()
@@ -163,8 +163,8 @@ class SumoAgent:
         reward, reward_detail_dict = map_computor.get_rewards_from_sumo(self.dic_vehicles, action, self.para_set.REWARDS_INFO_DICT)
         return reward*(1-0.8), reward_detail_dict
 
-    def cal_reward_from_list(self, reward_detail_dict_list):
-        reward = map_computor.get_rewards_from_dict_list(reward_detail_dict_list)
+    def cal_reward_from_list(self, reward_detail_dict_list, equity_reward=False):
+        reward = map_computor.get_rewards_from_dict_list(reward_detail_dict_list, equity_reward)
         return reward*(1-0.8)
 
 

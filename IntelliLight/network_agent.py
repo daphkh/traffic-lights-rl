@@ -9,14 +9,14 @@ Network agent from agent.py
 
 
 import numpy as np
-from keras.layers import Input, Dense, Conv2D, Flatten, BatchNormalization, Activation, Multiply, Add
-from keras.models import Model, model_from_json, load_model
-from keras.optimizers import RMSprop
-from keras.layers.core import Dropout
-from keras.layers.pooling import MaxPooling2D
-from keras import backend as K
+from tensorflow.keras.layers import Input, Dense, Conv2D, Flatten, BatchNormalization, Activation, Multiply, Add
+from tensorflow.keras.models import Model, model_from_json, load_model
+from tensorflow.keras.optimizers import RMSprop
+from tensorflow.keras.layers import Dropout
+from tensorflow.keras.layers import MaxPooling2D
+from tensorflow.keras import backend as K
 import random
-from keras.engine.topology import Layer
+from tensorflow.keras.layers import Layer
 import os
 
 from agent import Agent, State
@@ -109,10 +109,12 @@ class NetworkAgent(Agent):
         return q_values
 
     def load_model(self, file_name):
-        self.q_network = load_model(os.path.join(self.path_set.PATH_TO_MODEL, "%s_q_network.h5" % file_name))
+        pass
+        # self.q_network = load_model(os.path.join(self.path_set.PATH_TO_MODEL, "%s_q_network.h5" % file_name))
 
     def save_model(self, file_name):
-        self.q_network.save(os.path.join(self.path_set.PATH_TO_MODEL, "%s_q_network.h5" % file_name))
+        pass
+        # self.q_network.save(os.path.join(self.path_set.PATH_TO_MODEL, "%s_q_network.h5" % file_name))
 
     def choose(self, count, if_pretrain):
 

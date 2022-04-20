@@ -8,11 +8,11 @@ Deep reinforcement learning agent
 '''
 
 import numpy as np
-from keras.layers import Input, Dense, Conv2D, Flatten, BatchNormalization, Activation, Multiply, Add
-from keras.models import Model, model_from_json, load_model
-from keras.optimizers import RMSprop
-from keras.callbacks import EarlyStopping, TensorBoard
-from keras.layers.merge import concatenate, add
+from tensorflow.keras.layers import Input, Dense, Conv2D, Flatten, BatchNormalization, Activation, Multiply, Add
+from tensorflow.keras.models import Model, model_from_json, load_model
+from tensorflow.keras.optimizers import RMSprop
+from tensorflow.keras.callbacks import EarlyStopping, TensorBoard
+from tensorflow.keras.layers import concatenate
 import random
 import os
 
@@ -236,7 +236,7 @@ class DeeplightAgentPressure(NetworkAgent):
         hist = self.q_network.fit(Xs, Y, batch_size=batch_size, epochs=epochs,
                                   shuffle=False,
                                   verbose=2, validation_split=0.3, callbacks=[early_stopping])
-        self.save_model(prefix)
+        # self.save_model(prefix)
 
     def update_network(self, if_pretrain, use_average, current_time):
 
@@ -345,7 +345,7 @@ class DeeplightAgentPressure(NetworkAgent):
 
 
     def distanceImportance(self, distance):
-        return (-1/(1+np.exp(-distance + 10))) + 1
+        return (-1/(1+np.exp(-distance/6 + 5))) + 1
 
     def choose(self, count, if_pretrain):
         # q_values = self.q_network.predict(self.convert_state_to_input(self.state))
@@ -358,8 +358,8 @@ class DeeplightAgentPressure(NetworkAgent):
             for y in range(len(mapOfCars[0])):
 
                 if mapOfCars[x][y][0] == 1:
-                    if (y > 77 and x < 75):
-                        cardinal_nums_positive[0] += self.distanceImportance(y - 77)
+                    if (y > 76 and x < 75):
+                        cardinal_nums_positive[0] += self.distanceImportance(y - 76)
                     elif (x > 77 and y > 75):
                         cardinal_nums_positive[1] += self.distanceImportance(x - 77)
                     elif (y < 70 and x > 75):
@@ -367,8 +367,8 @@ class DeeplightAgentPressure(NetworkAgent):
                     elif (x < 70 and y < 75):
                         cardinal_nums_positive[3] += self.distanceImportance(70 - x)
 
-                    if (y > 77 and x > 75):
-                        cardinal_nums_negative[0] += self.distanceImportance(y - 77)
+                    if (y > 76 and x > 75):
+                        cardinal_nums_negative[0] += self.distanceImportance(y - 76)
                     elif (x > 77 and y < 75):
                         cardinal_nums_negative[1] += self.distanceImportance(x - 77)
                     elif (y < 70 and x < 75):
@@ -377,9 +377,9 @@ class DeeplightAgentPressure(NetworkAgent):
                         cardinal_nums_negative[3] += self.distanceImportance(70 - x)
                     # print(x, ",", y)
 
-        print("N, E, S, W")
-        print(cardinal_nums_positive)
-        print(cardinal_nums_negative)
+        # print("N, E, S, W")
+        # print(cardinal_nums_positive)
+        # print(cardinal_nums_negative)
 
         pressures = [max(x - y, 0) for x,y in zip(cardinal_nums_positive, cardinal_nums_negative)]
 
@@ -390,10 +390,10 @@ class DeeplightAgentPressure(NetworkAgent):
         best_phase = int((NS_pressure - EW_pressure) < 0)
 
 
-        print(NS_pressure)
-        print(EW_pressure)
-        print(best_phase)
-        print("END")
+        # print(NS_pressure)
+        # print(EW_pressure)
+        # print(best_phase)
+        # print("END")
 
         if self.state.cur_phase != best_phase:
             action = 1

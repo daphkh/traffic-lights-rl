@@ -149,7 +149,7 @@ class TrafficLightDQN:
                 os.path.join(self.path_set.PATH_TO_DATA, file_name),
                 os.path.join(self.path_set.PATH_TO_OUTPUT, file_name))
 
-    def train(self, sumo_cmd_str, if_pretrain, use_average):
+    def train(self, sumo_cmd_str, sumo_cmd_str_gui, if_pretrain, use_average):
 
         if if_pretrain:
             total_run_cnt = self.para_set.RUN_COUNTS_PRETRAIN
@@ -159,6 +159,7 @@ class TrafficLightDQN:
         else:
             total_run_cnt = self.para_set.RUN_COUNTS
 
+
         # initialize output streams
         file_name_memory = os.path.join(self.path_set.PATH_TO_OUTPUT, "memories.txt")
 
@@ -167,9 +168,15 @@ class TrafficLightDQN:
                             self.path_set)
         current_time = s_agent.get_current_time()  # in seconds
 
+
+        total_final_travel_times_overall = 0
+        total_final_travel_times_priority = 0
+
+        rewards_detail_dict_list = None
+
         # start experiment
         while current_time < total_run_cnt:
-
+            print(current_time, " , ", total_run_cnt)
             if if_pretrain:
                 if current_time > pre_train_count_per_ratio:
                     print("Terminal occured. Episode end.")
@@ -183,6 +190,13 @@ class TrafficLightDQN:
                     current_time = s_agent.get_current_time()  # in seconds
 
                 phase_time_now = phase_traffic_ratios[ind_phase_time]
+
+            # if not if_pretrain and ((total_run_cnt - current_time) == 100):
+            #     s_agent.end_sumo()
+            #     s_agent = SumoAgent(sumo_cmd_str_gui,
+            #             self.path_set)
+                # current_time = s_agent.get_current_time()
+
 
             f_memory = open(file_name_memory, "a")
 
@@ -201,7 +215,7 @@ class TrafficLightDQN:
                 action_pred, q_values = self.agent.choose(count=current_time, if_pretrain=if_pretrain)
 
             # get reward from sumo agent
-            reward, action = s_agent.take_action(action_pred)
+            reward, action, rewards_detail_dict_list = s_agent.take_action(action_pred)
 
             # get next state
             next_state = s_agent.get_observation()
@@ -211,13 +225,23 @@ class TrafficLightDQN:
             self.agent.remember(state, action, reward, next_state)
 
             # output to std out and file
-            memory_str = 'time = %d\taction = %d\tcurrent_phase = %d\tnext_phase = %d\treward = %f' \
-                         '\t%s' \
+
+            total_final_travel_times_overall += sum([thing["duration_of_vehicles_left"][-1] for thing in rewards_detail_dict_list])
+            total_final_travel_times_priority += sum([thing["duration_of_vehicles_left_priority"][-1] for thing in rewards_detail_dict_list])
+            # print("Length", len(rewards_detail_dict_list))
+            # print("Overall wait time:", rewards_detail_dict_list[-1]['wait_time_priority'][-1])
+            print("Overall Final Travel Time:", total_final_travel_times_overall)
+            print("Priority Final Travel Time:", total_final_travel_times_priority)
+
+
+            memory_str = 'time = {%d}\taction = {%d}\tcurrent_phase = {%d}\tnext_phase = {%d}\treward = {%f}' \
+                         '\t{%s} overall travel time = {%d} priority travel time = {%d}' \
                          % (current_time, action,
                             state.cur_phase[0][0],
                             state.next_phase[0][0],
-                            reward, repr(q_values))
-            print(memory_str)
+                            reward, repr(q_values), total_final_travel_times_overall,
+                            total_final_travel_times_priority)
+
             f_memory.write(memory_str + "\n")
             f_memory.close()
             current_time = s_agent.get_current_time()  # in seconds
@@ -232,13 +256,132 @@ class TrafficLightDQN:
             self.agent.update_network(if_pretrain, use_average, current_time)
             self.agent.update_network_bar()
         self.agent.reset_update_count()
-        print("END")
 
 
-def main(memo, f_prefix, sumo_cmd_str, sumo_cmd_pretrain_str):
+
+        total_final_travel_times_overall += rewards_detail_dict_list[-1]['wait_time'][-1]
+        total_final_travel_times_priority += rewards_detail_dict_list[-1]['wait_time_priority'][-1]
+        print("FINAL FINAL Overall Final Travel Time:", total_final_travel_times_overall)
+        print("FINAL FINAL Priority Final Travel Time:", total_final_travel_times_priority)
+        print("END", flush=True)
+
+    def eval(self, sumo_cmd_str, sumo_cmd_str_gui, if_pretrain, use_average):
+
+        if if_pretrain:
+            total_run_cnt = self.para_set.RUN_COUNTS_PRETRAIN
+            phase_traffic_ratios = self._generate_pre_train_ratios(self.para_set.BASE_RATIO, em_phase=0)  # en_phase=0
+            pre_train_count_per_ratio = math.ceil(total_run_cnt / len(phase_traffic_ratios))
+            ind_phase_time = 0
+        else:
+            total_run_cnt = self.para_set.RUN_COUNTS
+
+
+        # initialize output streams
+        file_name_memory = os.path.join(self.path_set.PATH_TO_OUTPUT, "memories.txt")
+
+        # start sumo
+        s_agent = SumoAgent(sumo_cmd_str,
+                            self.path_set)
+        current_time = s_agent.get_current_time()  # in seconds
+
+
+        total_final_travel_times_overall = 0
+        total_final_travel_times_priority = 0
+
+        rewards_detail_dict_list = None
+
+        # start experiment
+        while current_time < total_run_cnt:
+            print(current_time, " , ", total_run_cnt)
+            if if_pretrain:
+                if current_time > pre_train_count_per_ratio:
+                    print("Terminal occured. Episode end.")
+                    s_agent.end_sumo()
+                    ind_phase_time += 1
+                    if ind_phase_time >= len(phase_traffic_ratios):
+                        break
+
+                    s_agent = SumoAgent(sumo_cmd_str,
+                            self.path_set)
+                    current_time = s_agent.get_current_time()  # in seconds
+
+                phase_time_now = phase_traffic_ratios[ind_phase_time]
+
+            # if not if_pretrain and ((total_run_cnt - current_time) == 100):
+            #     s_agent.end_sumo()
+            #     s_agent = SumoAgent(sumo_cmd_str_gui,
+            #             self.path_set)
+                # current_time = s_agent.get_current_time()
+
+
+            f_memory = open(file_name_memory, "a")
+
+            # get state
+            state = s_agent.get_observation()
+            state = self.agent.get_state(state, current_time)
+
+            if if_pretrain:
+                _, q_values = self.agent.choose(count=current_time, if_pretrain=if_pretrain)
+                if state.time_this_phase[0][0] < phase_time_now[state.cur_phase[0][0]]:
+                    action_pred = 0
+                else:
+                    action_pred = 1
+            else:
+                # get action based on e-greedy, combine current state
+                action_pred, q_values = self.agent.choose(count=current_time, if_pretrain=if_pretrain)
+
+            # get reward from sumo agent
+            reward, action, rewards_detail_dict_list = s_agent.take_action(action_pred)
+
+            # get next state
+            next_state = s_agent.get_observation()
+            next_state = self.agent.get_next_state(next_state, current_time)
+
+            # remember
+            # self.agent.remember(state, action, reward, next_state)
+
+            # output to std out and file
+            # memory_str = 'time = %d\taction = %d\tcurrent_phase = %d\tnext_phase = %d\treward = %f' \
+            #              '\t%s' \
+            #              % (current_time, action,
+            #                 state.cur_phase[0][0],
+            #                 state.next_phase[0][0],
+            #                 reward, repr(q_values))
+            total_final_travel_times_overall += sum([thing["duration_of_vehicles_left"][-1] for thing in rewards_detail_dict_list])
+            total_final_travel_times_priority += sum([thing["duration_of_vehicles_left_priority"][-1] for thing in rewards_detail_dict_list])
+            # print("Length", len(rewards_detail_dict_list))
+            # print("Overall wait time:", rewards_detail_dict_list[-1]['wait_time_priority'][-1])
+            print("EVAL Overall Final Travel Time:", total_final_travel_times_overall)
+            print("EVAL Priority Final Travel Time:", total_final_travel_times_priority)
+            # f_memory.write(memory_str + "\n")
+            # f_memory.close()
+            current_time = s_agent.get_current_time()  # in seconds
+
+            # if not if_pretrain:
+                # update network
+                # self.agent.update_network(if_pretrain, use_average, current_time)
+                # self.agent.update_network_bar()
+
+        # if if_pretrain:
+            # self.agent.set_update_outdated()
+            # self.agent.update_network(if_pretrain, use_average, current_time)
+            # self.agent.update_network_bar()
+        self.agent.reset_update_count()
+
+
+
+        total_final_travel_times_overall += rewards_detail_dict_list[-1]['wait_time'][-1]
+        total_final_travel_times_priority += rewards_detail_dict_list[-1]['wait_time_priority'][-1]
+        print("EVAL FINAL FINAL Overall Final Travel Time:", total_final_travel_times_overall)
+        print("EVAL FINAL FINAL Priority Final Travel Time:", total_final_travel_times_priority)
+        print("END", flush=True)
+
+        return total_final_travel_times_overall, total_final_travel_times_priority
+
+def main(memo, f_prefix, sumo_cmd_str, sumo_cmd_str_gui, sumo_cmd_pretrain_str, sumo_cmd_pretrain_str_gui):
 
     player = TrafficLightDQN(memo, f_prefix)
     player.set_traffic_file()
-    player.train(sumo_cmd_pretrain_str, if_pretrain=True, use_average=True)
-    player.train(sumo_cmd_str, if_pretrain=False, use_average=False)
-
+    player.train(sumo_cmd_pretrain_str, sumo_cmd_pretrain_str_gui, if_pretrain=True, use_average=True)
+    player.train(sumo_cmd_str, sumo_cmd_str_gui, if_pretrain=False, use_average=False)
+    return player.eval(sumo_cmd_str_gui, sumo_cmd_str_gui, if_pretrain=False, use_average=False)

@@ -1,5 +1,6 @@
 <additional>
 <vType id="Car" accel="0.8" decel="4.5" sigma="0.5" length="3" minGap="1" maxSpeed="16.67" guiShape="passenger"/>
+<vType id="TrafficCar" accel="0.8" decel="4.5" sigma="0.5" length="3" minGap="1" maxSpeed="16.67" guiShape="police"/>
 <route id="route1" edges="edge1-0 edge0-2"/>
 <route id="route2" edges="edge2-0 edge0-1"/>
 <route id="route3" edges="edge3-0 edge0-4"/>

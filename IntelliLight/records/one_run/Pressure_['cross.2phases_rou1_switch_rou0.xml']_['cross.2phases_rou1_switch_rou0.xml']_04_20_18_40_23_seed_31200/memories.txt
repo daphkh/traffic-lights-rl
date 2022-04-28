@@ -1,0 +1,9 @@
+time = {20}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.042377}	{[0, 0]} overall travel time = {0} priority travel time = {0}
+time = {21}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.039637}	{[0, 0]} overall travel time = {0} priority travel time = {0}
+time = {22}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.041267}	{[0, 0]} overall travel time = {0} priority travel time = {0}
+time = {23}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.038876}	{[0, 0]} overall travel time = {0} priority travel time = {0}
+time = {24}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {0.177790}	{[0, 0]} overall travel time = {0} priority travel time = {0}
+time = {25}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.040303}	{[0, 0]} overall travel time = {0} priority travel time = {0}
+time = {26}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {0.182848}	{[0, 0]} overall travel time = {0} priority travel time = {0}
+time = {27}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.041795}	{[0, 0]} overall travel time = {0} priority travel time = {0}
+time = {28}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.039565}	{[0, 0]} overall travel time = {0} priority travel time = {0}

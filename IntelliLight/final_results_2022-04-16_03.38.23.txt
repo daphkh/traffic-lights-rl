@@ -1,0 +1,28 @@
+Deeplight:
+	['cross.2phases_rou1_switch_rou0.xml']	Overall Travel Time: 3744.6499999999965	 Priority Travel Time: 819.2666666666665
+		Took 105.35 minutes
+	['cross.2phases_rou01_equal_300s.xml']	Overall Travel Time: 425.10000000000133	 Priority Travel Time: 99.56666666666653
+		Took 86.53 minutes
+	['cross.2phases_rou01_unequal_5_300s.xml']	Overall Travel Time: 1527.3833333333216	 Priority Travel Time: 250.01666666666657
+		Took 91.37 minutes
+	['cross.all_synthetic.rou.xml']	Overall Travel Time: 70521.76666666666	 Priority Travel Time: 37415.249999999985
+		Took 322.09 minutes
+DeeplightEquity:
+	['cross.2phases_rou1_switch_rou0.xml']	Overall Travel Time: 34066.44999999998	 Priority Travel Time: 191.85000000000056
+		Took 192.88 minutes
+	['cross.2phases_rou01_equal_300s.xml']	Overall Travel Time: 604.2666666666664	 Priority Travel Time: 111.06666666666669
+		Took 136.89 minutes
+	['cross.2phases_rou01_unequal_5_300s.xml']	Overall Travel Time: 3526.666666666707	 Priority Travel Time: 1566.9833333333324
+		Took 153.94 minutes
+	['cross.all_synthetic.rou.xml']	Overall Travel Time: 21532.633333333364	 Priority Travel Time: 488.81666666666877
+		Took 523.39 minutes
+Pressure:
+	['cross.2phases_rou1_switch_rou0.xml']	Overall Travel Time: 4266.350000000005	 Priority Travel Time: 714.3166666666668
+		Took 9.0 minutes
+	['cross.2phases_rou01_equal_300s.xml']	Overall Travel Time: 413.2166666666678	 Priority Travel Time: 94.93333333333338
+		Took 4.3 minutes
+	['cross.2phases_rou01_unequal_5_300s.xml']	Overall Travel Time: 1526.5333333333347	 Priority Travel Time: 229.5500000000001
+		Took 5.33 minutes
+	['cross.all_synthetic.rou.xml']	Overall Travel Time: 6230.46666666671	 Priority Travel Time: 1040.9666666666585
+		Took 17.29 minutes
+

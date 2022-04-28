@@ -351,7 +351,7 @@ def get_rewards_from_sumo(vehicle_dict, action, rewards_info_dict,
 
     reward_detail_dict['queue_length'].append(get_overall_queue_length(listLanes))
     reward_detail_dict['wait_time'].append(get_overall_waiting_time(listLanes))
-    reward_detail_dict['wait_time_priority'] = [False,-0.08, get_prioritized_waiting_time(vehicle_dict)]
+    reward_detail_dict['wait_time_priority'] = [False,-0.15, get_prioritized_waiting_time(vehicle_dict)]
     reward_detail_dict['delay'].append(get_overall_delay(listLanes))
     reward_detail_dict['emergency'].append(get_num_of_emergency_stops(vehicle_dict))
     reward_detail_dict['duration'].append(get_travel_time_duration(vehicle_dict, vehicle_id_entering_list))

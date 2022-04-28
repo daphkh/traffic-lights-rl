@@ -1,0 +1,4 @@
+Results!
+DeeplightEquity:
+	['cross.2phases_rou01_unequal_5_300s.xml']	Overall Travel Time: 19197.5833333312	 Priority Travel Time: 4888.51666666667
+		Took 1580.77 minutes

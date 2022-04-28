@@ -17,16 +17,16 @@ setting_memo = "one_run"
 
 # first column: for train, second column: for spre_train
 list_traffic_files = [
-    [["cross.2phases_rou1_switch_rou0.xml"], ["cross.2phases_rou1_switch_rou0.xml"]],
+    # [["cross.2phases_rou1_switch_rou0.xml"], ["cross.2phases_rou1_switch_rou0.xml"]],
     # [["cross.2phases_rou01_equal_300s.xml"], ["cross.2phases_rou01_equal_300s.xml"]],
-    # [["cross.2phases_rou01_unequal_5_300s.xml"], ["cross.2phases_rou01_unequal_5_300s.xml"]],
+    [["cross.2phases_rou01_unequal_5_300s.xml"], ["cross.2phases_rou01_unequal_5_300s.xml"]],
     # [["cross.all_synthetic.rou.xml"], ["cross.all_synthetic.rou.xml"]],
 ]
 
 list_model_name = [
-                   # "Deeplight"#g,
-                   # "DeeplightEquity",
-                   "Pressure"
+                   # "Deeplight",
+                   "DeeplightEquity",
+                   # "Pressure"
                    ]
 
 
@@ -109,7 +109,7 @@ for model_name in list_model_name:
         if "real" in traffic_file[0]:
             dic_exp["RUN_COUNTS"] = 8640
         elif "2phase" in traffic_file[0]:
-            dic_exp["RUN_COUNTS"] = 43200
+            dic_exp["RUN_COUNTS"] = 72000
         elif "synthetic" in traffic_file[0]:
             dic_exp["RUN_COUNTS"] = 21600
         json.dump(dic_exp, open(os.path.join(PATH_TO_CONF, "exp.conf"), "w"), indent=4)
@@ -133,7 +133,7 @@ for model_name in list_model_name:
 # sumoCmd_nogui, sumoCmd_nogui_pretrain sumoCmd_pretrain sumoCmd
 #traffic_light_pressure   traffic_light_dqn
         travel_time_overall, travel_time_priority = model_func_dict[model_name].main(memo=setting_memo, f_prefix=prefix,
-                                                                                    sumo_cmd_str=sumoCmd, sumo_cmd_str_gui=sumoCmd,
+                                                                                    sumo_cmd_str=sumoCmd_nogui, sumo_cmd_str_gui=sumoCmd,
                                                                                     sumo_cmd_pretrain_str=sumoCmd_nogui_pretrain,
                                                                                     sumo_cmd_pretrain_str_gui=sumoCmd_nogui_pretrain)
 

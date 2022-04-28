@@ -1,0 +1,381 @@
+time = {20}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.393311}	{array([[0.61546487, 0.4086849 ]], dtype=float32)} overall travel time = {0} priority travel time = {0}
+time = {25}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.784800}	{array([[0.6173884 , 0.41235858]], dtype=float32)} overall travel time = {0} priority travel time = {0}
+time = {30}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-2.117538}	{array([[0.62003654, 0.40765426]], dtype=float32)} overall travel time = {1} priority travel time = {1}
+time = {38}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-0.771471}	{array([[-0.11056593,  0.16122195]], dtype=float32)} overall travel time = {3} priority travel time = {2}
+time = {43}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-2.258565}	{array([[-0.10639312,  0.16795185]], dtype=float32)} overall travel time = {6} priority travel time = {3}
+time = {51}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {0.190765}	{array([[0.5829992 , 0.38874334]], dtype=float32)} overall travel time = {9} priority travel time = {3}
+time = {56}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-1.203678}	{array([[0.6212567 , 0.39757222]], dtype=float32)} overall travel time = {14} priority travel time = {7}
+time = {64}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-0.929455}	{array([[-0.10077868,  0.15354553]], dtype=float32)} overall travel time = {16} priority travel time = {9}
+time = {69}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-2.450908}	{array([[-0.09906055,  0.1486875 ]], dtype=float32)} overall travel time = {19} priority travel time = {9}
+time = {77}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.436684}	{array([[0.58489835, 0.38839078]], dtype=float32)} overall travel time = {22} priority travel time = {9}
+time = {82}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-1.841990}	{array([[0.61870337, 0.3943078 ]], dtype=float32)} overall travel time = {27} priority travel time = {13}
+time = {90}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-0.265080}	{array([[-0.10338686,  0.16086881]], dtype=float32)} overall travel time = {30} priority travel time = {16}
+time = {95}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-2.203965}	{array([[-0.10109504,  0.1552593 ]], dtype=float32)} overall travel time = {33} priority travel time = {17}
+time = {20}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.393311}	{array([[0.61546487, 0.4086849 ]], dtype=float32)} overall travel time = {33} priority travel time = {17}
+time = {25}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.784800}	{array([[0.6173884 , 0.41235858]], dtype=float32)} overall travel time = {34} priority travel time = {17}
+time = {30}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-1.500692}	{array([[0.62003654, 0.40765426]], dtype=float32)} overall travel time = {34} priority travel time = {17}
+time = {35}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-1.986351}	{array([[0.6322079 , 0.40835243]], dtype=float32)} overall travel time = {36} priority travel time = {18}
+time = {43}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {0.403253}	{array([[-0.11395121,  0.16948262]], dtype=float32)} overall travel time = {39} priority travel time = {21}
+time = {48}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-1.371853}	{array([[-0.10388309,  0.16504115]], dtype=float32)} overall travel time = {43} priority travel time = {22}
+time = {56}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-1.257285}	{array([[0.6097966 , 0.40169477]], dtype=float32)} overall travel time = {45} priority travel time = {22}
+time = {61}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-1.744035}	{array([[0.615512  , 0.40109062]], dtype=float32)} overall travel time = {46} priority travel time = {22}
+time = {66}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-2.676503}	{array([[0.6410754, 0.4070701]], dtype=float32)} overall travel time = {51} priority travel time = {26}
+time = {74}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-0.062853}	{array([[-0.11007249,  0.1607797 ]], dtype=float32)} overall travel time = {55} priority travel time = {30}
+time = {79}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-2.108555}	{array([[-0.09611022,  0.14794466]], dtype=float32)} overall travel time = {59} priority travel time = {30}
+time = {87}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.750787}	{array([[0.59032404, 0.39963388]], dtype=float32)} overall travel time = {62} priority travel time = {30}
+time = {92}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-2.175007}	{array([[0.6113622, 0.3960056]], dtype=float32)} overall travel time = {63} priority travel time = {30}
+time = {97}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-2.430580}	{array([[0.6271927 , 0.39142805]], dtype=float32)} overall travel time = {68} priority travel time = {35}
+time = {20}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.393311}	{array([[0.61546487, 0.4086849 ]], dtype=float32)} overall travel time = {68} priority travel time = {35}
+time = {25}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.784800}	{array([[0.6173884 , 0.41235858]], dtype=float32)} overall travel time = {68} priority travel time = {35}
+time = {30}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-1.500692}	{array([[0.62003654, 0.40765426]], dtype=float32)} overall travel time = {69} priority travel time = {35}
+time = {35}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-1.986351}	{array([[0.6322079 , 0.40835243]], dtype=float32)} overall travel time = {71} priority travel time = {37}
+time = {43}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {0.403253}	{array([[-0.11395121,  0.16948262]], dtype=float32)} overall travel time = {74} priority travel time = {40}
+time = {48}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-1.371853}	{array([[-0.10388309,  0.16504115]], dtype=float32)} overall travel time = {78} priority travel time = {40}
+time = {56}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-1.257285}	{array([[0.6097966 , 0.40169477]], dtype=float32)} overall travel time = {79} priority travel time = {40}
+time = {61}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-1.744035}	{array([[0.615512  , 0.40109062]], dtype=float32)} overall travel time = {81} priority travel time = {40}
+time = {66}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-2.676503}	{array([[0.6410754, 0.4070701]], dtype=float32)} overall travel time = {86} priority travel time = {45}
+time = {74}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-0.062853}	{array([[-0.11007249,  0.1607797 ]], dtype=float32)} overall travel time = {89} priority travel time = {48}
+time = {79}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-2.108555}	{array([[-0.09611022,  0.14794466]], dtype=float32)} overall travel time = {94} priority travel time = {49}
+time = {87}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.750787}	{array([[0.59032404, 0.39963388]], dtype=float32)} overall travel time = {96} priority travel time = {49}
+time = {92}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-2.175007}	{array([[0.6113622, 0.3960056]], dtype=float32)} overall travel time = {98} priority travel time = {49}
+time = {97}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-2.430580}	{array([[0.6271927 , 0.39142805]], dtype=float32)} overall travel time = {103} priority travel time = {54}
+time = {20}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.393311}	{array([[0.61546487, 0.4086849 ]], dtype=float32)} overall travel time = {103} priority travel time = {54}
+time = {25}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.784800}	{array([[0.6173884 , 0.41235858]], dtype=float32)} overall travel time = {103} priority travel time = {54}
+time = {30}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-1.500692}	{array([[0.62003654, 0.40765426]], dtype=float32)} overall travel time = {104} priority travel time = {54}
+time = {35}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-1.986351}	{array([[0.6322079 , 0.40835243]], dtype=float32)} overall travel time = {106} priority travel time = {55}
+time = {43}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {0.403253}	{array([[-0.11395121,  0.16948262]], dtype=float32)} overall travel time = {109} priority travel time = {58}
+time = {48}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-1.371853}	{array([[-0.10388309,  0.16504115]], dtype=float32)} overall travel time = {113} priority travel time = {59}
+time = {56}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-1.257285}	{array([[0.6097966 , 0.40169477]], dtype=float32)} overall travel time = {114} priority travel time = {59}
+time = {61}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-1.744035}	{array([[0.615512  , 0.40109062]], dtype=float32)} overall travel time = {116} priority travel time = {59}
+time = {66}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-2.676503}	{array([[0.6410754, 0.4070701]], dtype=float32)} overall travel time = {120} priority travel time = {63}
+time = {74}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-0.062853}	{array([[-0.11007249,  0.1607797 ]], dtype=float32)} overall travel time = {124} priority travel time = {67}
+time = {79}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-2.108555}	{array([[-0.09611022,  0.14794466]], dtype=float32)} overall travel time = {129} priority travel time = {67}
+time = {87}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.750787}	{array([[0.59032404, 0.39963388]], dtype=float32)} overall travel time = {131} priority travel time = {67}
+time = {92}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-2.175007}	{array([[0.6113622, 0.3960056]], dtype=float32)} overall travel time = {132} priority travel time = {67}
+time = {97}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-2.430580}	{array([[0.6271927 , 0.39142805]], dtype=float32)} overall travel time = {137} priority travel time = {72}
+time = {20}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.393311}	{array([[0.61546487, 0.4086849 ]], dtype=float32)} overall travel time = {138} priority travel time = {72}
+time = {25}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.784800}	{array([[0.6173884 , 0.41235858]], dtype=float32)} overall travel time = {138} priority travel time = {72}
+time = {30}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-1.500692}	{array([[0.62003654, 0.40765426]], dtype=float32)} overall travel time = {138} priority travel time = {72}
+time = {35}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-1.986351}	{array([[0.6322079 , 0.40835243]], dtype=float32)} overall travel time = {141} priority travel time = {74}
+time = {43}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {0.403253}	{array([[-0.11395121,  0.16948262]], dtype=float32)} overall travel time = {144} priority travel time = {77}
+time = {48}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-1.371853}	{array([[-0.10388309,  0.16504115]], dtype=float32)} overall travel time = {148} priority travel time = {77}
+time = {56}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-1.257285}	{array([[0.6097966 , 0.40169477]], dtype=float32)} overall travel time = {149} priority travel time = {77}
+time = {61}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-1.744035}	{array([[0.615512  , 0.40109062]], dtype=float32)} overall travel time = {151} priority travel time = {77}
+time = {66}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-2.676503}	{array([[0.6410754, 0.4070701]], dtype=float32)} overall travel time = {155} priority travel time = {82}
+time = {74}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-0.062853}	{array([[-0.11007249,  0.1607797 ]], dtype=float32)} overall travel time = {159} priority travel time = {85}
+time = {79}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-2.108555}	{array([[-0.09611022,  0.14794466]], dtype=float32)} overall travel time = {163} priority travel time = {86}
+time = {87}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.750787}	{array([[0.59032404, 0.39963388]], dtype=float32)} overall travel time = {166} priority travel time = {86}
+time = {92}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-2.175007}	{array([[0.6113622, 0.3960056]], dtype=float32)} overall travel time = {167} priority travel time = {86}
+time = {97}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-2.430580}	{array([[0.6271927 , 0.39142805]], dtype=float32)} overall travel time = {172} priority travel time = {90}
+time = {20}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.393311}	{array([[0.61546487, 0.4086849 ]], dtype=float32)} overall travel time = {172} priority travel time = {90}
+time = {25}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.784800}	{array([[0.6173884 , 0.41235858]], dtype=float32)} overall travel time = {173} priority travel time = {90}
+time = {30}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-1.500692}	{array([[0.62003654, 0.40765426]], dtype=float32)} overall travel time = {173} priority travel time = {90}
+time = {35}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-1.986351}	{array([[0.6322079 , 0.40835243]], dtype=float32)} overall travel time = {175} priority travel time = {92}
+time = {43}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {0.403253}	{array([[-0.11395121,  0.16948262]], dtype=float32)} overall travel time = {178} priority travel time = {95}
+time = {48}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-1.371853}	{array([[-0.10388309,  0.16504115]], dtype=float32)} overall travel time = {182} priority travel time = {96}
+time = {56}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-1.257285}	{array([[0.6097966 , 0.40169477]], dtype=float32)} overall travel time = {184} priority travel time = {96}
+time = {61}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-1.744035}	{array([[0.615512  , 0.40109062]], dtype=float32)} overall travel time = {185} priority travel time = {96}
+time = {66}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-2.676503}	{array([[0.6410754, 0.4070701]], dtype=float32)} overall travel time = {190} priority travel time = {100}
+time = {74}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-0.062853}	{array([[-0.11007249,  0.1607797 ]], dtype=float32)} overall travel time = {194} priority travel time = {104}
+time = {79}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-2.108555}	{array([[-0.09611022,  0.14794466]], dtype=float32)} overall travel time = {198} priority travel time = {104}
+time = {87}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.750787}	{array([[0.59032404, 0.39963388]], dtype=float32)} overall travel time = {200} priority travel time = {104}
+time = {92}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-2.175007}	{array([[0.6113622, 0.3960056]], dtype=float32)} overall travel time = {202} priority travel time = {104}
+time = {97}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-2.430580}	{array([[0.6271927 , 0.39142805]], dtype=float32)} overall travel time = {207} priority travel time = {109}
+time = {20}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.393311}	{array([[0.61546487, 0.4086849 ]], dtype=float32)} overall travel time = {207} priority travel time = {109}
+time = {25}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.784800}	{array([[0.6173884 , 0.41235858]], dtype=float32)} overall travel time = {207} priority travel time = {109}
+time = {30}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-1.500692}	{array([[0.62003654, 0.40765426]], dtype=float32)} overall travel time = {208} priority travel time = {109}
+time = {35}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-2.035970}	{array([[0.6322079 , 0.40835243]], dtype=float32)} overall travel time = {209} priority travel time = {109}
+time = {40}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-2.405477}	{array([[0.6452876, 0.4015565]], dtype=float32)} overall travel time = {212} priority travel time = {112}
+time = {48}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {0.124948}	{array([[-0.10798773,  0.15598002]], dtype=float32)} overall travel time = {215} priority travel time = {115}
+time = {53}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-2.412137}	{array([[-0.10811507,  0.15664005]], dtype=float32)} overall travel time = {219} priority travel time = {115}
+time = {61}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.818924}	{array([[0.60360265, 0.38841558]], dtype=float32)} overall travel time = {222} priority travel time = {115}
+time = {66}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-2.670560}	{array([[0.6423487 , 0.40137455]], dtype=float32)} overall travel time = {222} priority travel time = {115}
+time = {71}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-3.641164}	{array([[0.648231  , 0.39968956]], dtype=float32)} overall travel time = {223} priority travel time = {115}
+time = {76}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-3.623338}	{array([[0.65435946, 0.39715248]], dtype=float32)} overall travel time = {229} priority travel time = {120}
+time = {84}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {0.844694}	{array([[-0.13145483,  0.15685266]], dtype=float32)} overall travel time = {234} priority travel time = {126}
+time = {89}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-3.321472}	{array([[-0.12395348,  0.1675361 ]], dtype=float32)} overall travel time = {239} priority travel time = {126}
+time = {97}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-2.564771}	{array([[0.6418685, 0.3984385]], dtype=float32)} overall travel time = {240} priority travel time = {126}
+time = {20}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.393311}	{array([[0.61546487, 0.4086849 ]], dtype=float32)} overall travel time = {240} priority travel time = {126}
+time = {25}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.784800}	{array([[0.6173884 , 0.41235858]], dtype=float32)} overall travel time = {241} priority travel time = {126}
+time = {30}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-1.500692}	{array([[0.62003654, 0.40765426]], dtype=float32)} overall travel time = {241} priority travel time = {126}
+time = {35}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-2.035970}	{array([[0.6322079 , 0.40835243]], dtype=float32)} overall travel time = {242} priority travel time = {126}
+time = {40}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-2.902141}	{array([[0.6452876, 0.4015565]], dtype=float32)} overall travel time = {243} priority travel time = {126}
+time = {45}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-3.970778}	{array([[0.65153015, 0.39786798]], dtype=float32)} overall travel time = {246} priority travel time = {129}
+time = {53}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {0.487994}	{array([[-0.11796011,  0.15388855]], dtype=float32)} overall travel time = {251} priority travel time = {133}
+time = {58}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-3.969583}	{array([[-0.10500441,  0.1618523 ]], dtype=float32)} overall travel time = {254} priority travel time = {133}
+time = {66}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-1.609683}	{array([[0.61098385, 0.3851404 ]], dtype=float32)} overall travel time = {257} priority travel time = {133}
+time = {71}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-3.741151}	{array([[0.6431541 , 0.39325255]], dtype=float32)} overall travel time = {258} priority travel time = {133}
+time = {76}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-3.966834}	{array([[0.64946   , 0.39711058]], dtype=float32)} overall travel time = {260} priority travel time = {133}
+time = {81}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-5.453393}	{array([[0.66421735, 0.3967226 ]], dtype=float32)} overall travel time = {260} priority travel time = {133}
+time = {86}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-6.662704}	{array([[0.66511595, 0.39155987]], dtype=float32)} overall travel time = {266} priority travel time = {139}
+time = {94}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {0.620064}	{array([[-0.1363642,  0.1569877]], dtype=float32)} overall travel time = {273} priority travel time = {146}
+time = {99}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-4.181439}	{array([[-0.12293291,  0.15903135]], dtype=float32)} overall travel time = {278} priority travel time = {146}
+time = {20}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.393311}	{array([[0.61546487, 0.4086849 ]], dtype=float32)} overall travel time = {278} priority travel time = {146}
+time = {25}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.784800}	{array([[0.6173884 , 0.41235858]], dtype=float32)} overall travel time = {278} priority travel time = {146}
+time = {30}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-2.117538}	{array([[0.62003654, 0.40765426]], dtype=float32)} overall travel time = {279} priority travel time = {147}
+time = {38}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-0.771471}	{array([[-0.11056593,  0.16122195]], dtype=float32)} overall travel time = {281} priority travel time = {149}
+time = {43}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-2.344441}	{array([[-0.10639312,  0.16795185]], dtype=float32)} overall travel time = {282} priority travel time = {150}
+time = {48}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-1.980316}	{array([[-0.10020155,  0.16241485]], dtype=float32)} overall travel time = {287} priority travel time = {151}
+time = {56}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.346616}	{array([[0.5893145, 0.3845855]], dtype=float32)} overall travel time = {289} priority travel time = {151}
+time = {61}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-2.618425}	{array([[0.60652304, 0.38869366]], dtype=float32)} overall travel time = {294} priority travel time = {154}
+time = {69}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-1.349557}	{array([[-0.10100791,  0.16179071]], dtype=float32)} overall travel time = {296} priority travel time = {157}
+time = {74}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-3.167412}	{array([[-0.10024699,  0.173175  ]], dtype=float32)} overall travel time = {297} priority travel time = {157}
+time = {79}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-3.948901}	{array([[-0.09397943,  0.17032862]], dtype=float32)} overall travel time = {301} priority travel time = {157}
+time = {87}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.082168}	{array([[0.57248074, 0.38469034]], dtype=float32)} overall travel time = {306} priority travel time = {157}
+time = {92}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-4.976882}	{array([[0.60939205, 0.3937534 ]], dtype=float32)} overall travel time = {308} priority travel time = {160}
+time = {100}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-1.157486}	{array([[-0.10692199,  0.16588637]], dtype=float32)} overall travel time = {312} priority travel time = {164}
+time = {20}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.393311}	{array([[0.61546487, 0.4086849 ]], dtype=float32)} overall travel time = {313} priority travel time = {164}
+time = {25}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.784800}	{array([[0.6173884 , 0.41235858]], dtype=float32)} overall travel time = {313} priority travel time = {164}
+time = {30}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-2.117538}	{array([[0.62003654, 0.40765426]], dtype=float32)} overall travel time = {314} priority travel time = {165}
+time = {38}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-0.771471}	{array([[-0.11056593,  0.16122195]], dtype=float32)} overall travel time = {316} priority travel time = {167}
+time = {43}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-2.344441}	{array([[-0.10639312,  0.16795185]], dtype=float32)} overall travel time = {317} priority travel time = {168}
+time = {48}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-1.980316}	{array([[-0.10020155,  0.16241485]], dtype=float32)} overall travel time = {321} priority travel time = {169}
+time = {56}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.346616}	{array([[0.5893145, 0.3845855]], dtype=float32)} overall travel time = {324} priority travel time = {169}
+time = {61}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-2.618425}	{array([[0.60652304, 0.38869366]], dtype=float32)} overall travel time = {328} priority travel time = {173}
+time = {69}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-1.349557}	{array([[-0.10100791,  0.16179071]], dtype=float32)} overall travel time = {331} priority travel time = {175}
+time = {74}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-3.167412}	{array([[-0.10024699,  0.173175  ]], dtype=float32)} overall travel time = {332} priority travel time = {176}
+time = {79}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-3.948901}	{array([[-0.09397943,  0.17032862]], dtype=float32)} overall travel time = {336} priority travel time = {176}
+time = {87}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.082168}	{array([[0.57248074, 0.38469034]], dtype=float32)} overall travel time = {341} priority travel time = {176}
+time = {92}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-4.976882}	{array([[0.60939205, 0.3937534 ]], dtype=float32)} overall travel time = {343} priority travel time = {178}
+time = {100}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-1.157486}	{array([[-0.10692199,  0.16588637]], dtype=float32)} overall travel time = {347} priority travel time = {182}
+time = {20}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.393311}	{array([[0.61546487, 0.4086849 ]], dtype=float32)} overall travel time = {347} priority travel time = {182}
+time = {25}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.784800}	{array([[0.6173884 , 0.41235858]], dtype=float32)} overall travel time = {348} priority travel time = {182}
+time = {30}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-2.117538}	{array([[0.62003654, 0.40765426]], dtype=float32)} overall travel time = {349} priority travel time = {184}
+time = {38}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-0.771471}	{array([[-0.11056593,  0.16122195]], dtype=float32)} overall travel time = {351} priority travel time = {185}
+time = {43}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-2.344441}	{array([[-0.10639312,  0.16795185]], dtype=float32)} overall travel time = {352} priority travel time = {186}
+time = {48}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-1.980316}	{array([[-0.10020155,  0.16241485]], dtype=float32)} overall travel time = {356} priority travel time = {187}
+time = {56}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.346616}	{array([[0.5893145, 0.3845855]], dtype=float32)} overall travel time = {359} priority travel time = {187}
+time = {61}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-2.618425}	{array([[0.60652304, 0.38869366]], dtype=float32)} overall travel time = {363} priority travel time = {191}
+time = {69}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-1.349557}	{array([[-0.10100791,  0.16179071]], dtype=float32)} overall travel time = {366} priority travel time = {193}
+time = {74}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-3.167412}	{array([[-0.10024699,  0.173175  ]], dtype=float32)} overall travel time = {366} priority travel time = {194}
+time = {79}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-3.948901}	{array([[-0.09397943,  0.17032862]], dtype=float32)} overall travel time = {371} priority travel time = {194}
+time = {87}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.082168}	{array([[0.57248074, 0.38469034]], dtype=float32)} overall travel time = {375} priority travel time = {194}
+time = {92}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-4.976882}	{array([[0.60939205, 0.3937534 ]], dtype=float32)} overall travel time = {378} priority travel time = {196}
+time = {100}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-1.157486}	{array([[-0.10692199,  0.16588637]], dtype=float32)} overall travel time = {382} priority travel time = {201}
+time = {20}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.393311}	{array([[0.61546487, 0.4086849 ]], dtype=float32)} overall travel time = {382} priority travel time = {201}
+time = {25}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.784800}	{array([[0.6173884 , 0.41235858]], dtype=float32)} overall travel time = {383} priority travel time = {201}
+time = {30}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-2.117538}	{array([[0.62003654, 0.40765426]], dtype=float32)} overall travel time = {384} priority travel time = {202}
+time = {38}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-0.771471}	{array([[-0.11056593,  0.16122195]], dtype=float32)} overall travel time = {386} priority travel time = {204}
+time = {43}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-2.344441}	{array([[-0.10639312,  0.16795185]], dtype=float32)} overall travel time = {386} priority travel time = {204}
+time = {48}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-1.980316}	{array([[-0.10020155,  0.16241485]], dtype=float32)} overall travel time = {391} priority travel time = {205}
+time = {56}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.346616}	{array([[0.5893145, 0.3845855]], dtype=float32)} overall travel time = {394} priority travel time = {205}
+time = {61}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-2.618425}	{array([[0.60652304, 0.38869366]], dtype=float32)} overall travel time = {398} priority travel time = {209}
+time = {69}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-1.349557}	{array([[-0.10100791,  0.16179071]], dtype=float32)} overall travel time = {400} priority travel time = {211}
+time = {74}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-3.167412}	{array([[-0.10024699,  0.173175  ]], dtype=float32)} overall travel time = {401} priority travel time = {212}
+time = {79}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-3.948901}	{array([[-0.09397943,  0.17032862]], dtype=float32)} overall travel time = {406} priority travel time = {212}
+time = {87}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.082168}	{array([[0.57248074, 0.38469034]], dtype=float32)} overall travel time = {410} priority travel time = {212}
+time = {92}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-4.976882}	{array([[0.60939205, 0.3937534 ]], dtype=float32)} overall travel time = {413} priority travel time = {215}
+time = {100}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-1.157486}	{array([[-0.10692199,  0.16588637]], dtype=float32)} overall travel time = {417} priority travel time = {219}
+time = {20}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.393311}	{array([[0.61546487, 0.4086849 ]], dtype=float32)} overall travel time = {417} priority travel time = {219}
+time = {25}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.784800}	{array([[0.6173884 , 0.41235858]], dtype=float32)} overall travel time = {417} priority travel time = {219}
+time = {30}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-2.117538}	{array([[0.62003654, 0.40765426]], dtype=float32)} overall travel time = {419} priority travel time = {220}
+time = {38}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-0.771471}	{array([[-0.11056593,  0.16122195]], dtype=float32)} overall travel time = {420} priority travel time = {222}
+time = {43}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-2.344441}	{array([[-0.10639312,  0.16795185]], dtype=float32)} overall travel time = {421} priority travel time = {223}
+time = {48}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-1.980316}	{array([[-0.10020155,  0.16241485]], dtype=float32)} overall travel time = {426} priority travel time = {223}
+time = {56}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.346616}	{array([[0.5893145, 0.3845855]], dtype=float32)} overall travel time = {429} priority travel time = {223}
+time = {61}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-2.618425}	{array([[0.60652304, 0.38869366]], dtype=float32)} overall travel time = {433} priority travel time = {227}
+time = {69}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-1.349557}	{array([[-0.10100791,  0.16179071]], dtype=float32)} overall travel time = {435} priority travel time = {230}
+time = {74}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-3.167412}	{array([[-0.10024699,  0.173175  ]], dtype=float32)} overall travel time = {436} priority travel time = {230}
+time = {79}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-3.948901}	{array([[-0.09397943,  0.17032862]], dtype=float32)} overall travel time = {441} priority travel time = {230}
+time = {87}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.082168}	{array([[0.57248074, 0.38469034]], dtype=float32)} overall travel time = {445} priority travel time = {230}
+time = {92}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-4.976882}	{array([[0.60939205, 0.3937534 ]], dtype=float32)} overall travel time = {448} priority travel time = {233}
+time = {100}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-1.157486}	{array([[-0.10692199,  0.16588637]], dtype=float32)} overall travel time = {452} priority travel time = {237}
+time = {20}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.393311}	{array([[0.61546487, 0.4086849 ]], dtype=float32)} overall travel time = {452} priority travel time = {237}
+time = {25}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.784800}	{array([[0.6173884 , 0.41235858]], dtype=float32)} overall travel time = {452} priority travel time = {237}
+time = {30}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-2.117538}	{array([[0.62003654, 0.40765426]], dtype=float32)} overall travel time = {454} priority travel time = {238}
+time = {38}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-0.771471}	{array([[-0.11056593,  0.16122195]], dtype=float32)} overall travel time = {455} priority travel time = {240}
+time = {43}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-2.344441}	{array([[-0.10639312,  0.16795185]], dtype=float32)} overall travel time = {456} priority travel time = {241}
+time = {48}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-2.887366}	{array([[-0.10020155,  0.16241485]], dtype=float32)} overall travel time = {457} priority travel time = {242}
+time = {53}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-3.320270}	{array([[-0.10864828,  0.16336992]], dtype=float32)} overall travel time = {462} priority travel time = {242}
+time = {61}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.093241}	{array([[0.5723363, 0.384637 ]], dtype=float32)} overall travel time = {466} priority travel time = {242}
+time = {66}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-3.952892}	{array([[0.599399  , 0.38672554]], dtype=float32)} overall travel time = {470} priority travel time = {246}
+time = {74}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-2.289398}	{array([[-0.10403059,  0.16473283]], dtype=float32)} overall travel time = {472} priority travel time = {249}
+time = {79}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-3.742845}	{array([[-0.09963427,  0.16868193]], dtype=float32)} overall travel time = {473} priority travel time = {250}
+time = {84}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-4.814668}	{array([[-0.10346384,  0.163818  ]], dtype=float32)} overall travel time = {474} priority travel time = {251}
+time = {89}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-5.559275}	{array([[-0.09851092,  0.16339472]], dtype=float32)} overall travel time = {480} priority travel time = {251}
+time = {97}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {0.762067}	{array([[0.5512988 , 0.38040468]], dtype=float32)} overall travel time = {486} priority travel time = {251}
+time = {20}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.393311}	{array([[0.61546487, 0.4086849 ]], dtype=float32)} overall travel time = {487} priority travel time = {251}
+time = {25}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.784800}	{array([[0.6173884 , 0.41235858]], dtype=float32)} overall travel time = {487} priority travel time = {251}
+time = {30}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-2.117538}	{array([[0.62003654, 0.40765426]], dtype=float32)} overall travel time = {488} priority travel time = {252}
+time = {38}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-0.771471}	{array([[-0.11056593,  0.16122195]], dtype=float32)} overall travel time = {490} priority travel time = {254}
+time = {43}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-2.344441}	{array([[-0.10639312,  0.16795185]], dtype=float32)} overall travel time = {491} priority travel time = {255}
+time = {48}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-2.887366}	{array([[-0.10020155,  0.16241485]], dtype=float32)} overall travel time = {492} priority travel time = {256}
+time = {53}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-3.856174}	{array([[-0.10864828,  0.16336992]], dtype=float32)} overall travel time = {493} priority travel time = {257}
+time = {58}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-4.272030}	{array([[-0.09601192,  0.17058474]], dtype=float32)} overall travel time = {499} priority travel time = {257}
+time = {66}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.264581}	{array([[0.5664989 , 0.37922004]], dtype=float32)} overall travel time = {503} priority travel time = {257}
+time = {71}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-4.116175}	{array([[0.59525186, 0.3796878 ]], dtype=float32)} overall travel time = {507} priority travel time = {261}
+time = {79}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-2.701794}	{array([[-0.1117726 ,  0.17299926]], dtype=float32)} overall travel time = {509} priority travel time = {264}
+time = {84}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-3.819619}	{array([[-0.09563962,  0.1720165 ]], dtype=float32)} overall travel time = {511} priority travel time = {265}
+time = {89}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-5.519228}	{array([[-0.09302852,  0.17512573]], dtype=float32)} overall travel time = {512} priority travel time = {266}
+time = {94}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-6.499722}	{array([[-0.08756672,  0.1678878 ]], dtype=float32)} overall travel time = {513} priority travel time = {267}
+time = {99}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-7.111988}	{array([[-0.0878364 ,  0.18094371]], dtype=float32)} overall travel time = {520} priority travel time = {268}
+time = {20}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.393311}	{array([[-1.0419357, -3.1796064]], dtype=float32)} overall travel time = {0} priority travel time = {0}
+time = {25}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.784800}	{array([[-1.1678612, -3.1974127]], dtype=float32)} overall travel time = {0} priority travel time = {0}
+time = {30}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-1.500692}	{array([[-1.3536364, -3.1046314]], dtype=float32)} overall travel time = {0} priority travel time = {0}
+time = {35}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-2.035970}	{array([[-1.4783139, -3.0983799]], dtype=float32)} overall travel time = {1} priority travel time = {0}
+time = {40}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-2.902141}	{array([[-1.6291085, -3.2059917]], dtype=float32)} overall travel time = {2} priority travel time = {0}
+time = {45}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-4.069277}	{array([[-1.6655989, -3.2968724]], dtype=float32)} overall travel time = {3} priority travel time = {0}
+time = {50}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-5.030456}	{array([[-1.749207 , -3.2616918]], dtype=float32)} overall travel time = {4} priority travel time = {0}
+time = {55}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-5.987089}	{array([[-1.7779534, -3.2998097]], dtype=float32)} overall travel time = {5} priority travel time = {0}
+time = {60}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-6.439180}	{array([[-1.800861 , -3.3259685]], dtype=float32)} overall travel time = {6} priority travel time = {0}
+time = {65}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-8.198398}	{array([[-1.8390735, -3.353362 ]], dtype=float32)} overall travel time = {7} priority travel time = {0}
+time = {70}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-9.189508}	{array([[-1.8589745, -3.3729432]], dtype=float32)} overall travel time = {8} priority travel time = {0}
+time = {75}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-10.447929}	{array([[-1.8764235, -3.3908608]], dtype=float32)} overall travel time = {9} priority travel time = {0}
+time = {80}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-11.764873}	{array([[-1.88916, -3.42795]], dtype=float32)} overall travel time = {10} priority travel time = {0}
+time = {85}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-12.502165}	{array([[-1.8994633, -3.4688797]], dtype=float32)} overall travel time = {11} priority travel time = {0}
+time = {90}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-14.386354}	{array([[-1.9140451, -3.4748619]], dtype=float32)} overall travel time = {12} priority travel time = {0}
+time = {95}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-15.849466}	{array([[-1.915866 , -3.4893296]], dtype=float32)} overall travel time = {13} priority travel time = {0}
+time = {100}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-17.267181}	{array([[-1.9210081, -3.5241694]], dtype=float32)} overall travel time = {14} priority travel time = {0}
+time = {105}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-18.335534}	{array([[-1.9218942, -3.5249221]], dtype=float32)} overall travel time = {15} priority travel time = {0}
+time = {110}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-20.321069}	{array([[-1.9289049, -3.5407908]], dtype=float32)} overall travel time = {16} priority travel time = {0}
+time = {115}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-21.996802}	{array([[-1.9327152, -3.543664 ]], dtype=float32)} overall travel time = {17} priority travel time = {0}
+time = {120}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-23.367454}	{array([[-1.9368032, -3.556373 ]], dtype=float32)} overall travel time = {18} priority travel time = {0}
+time = {125}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-25.097688}	{array([[-1.9402306, -3.5755305]], dtype=float32)} overall travel time = {19} priority travel time = {0}
+time = {130}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-27.050607}	{array([[-1.9434049, -3.5741334]], dtype=float32)} overall travel time = {20} priority travel time = {0}
+time = {135}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-28.988853}	{array([[-1.9464604, -3.587144 ]], dtype=float32)} overall travel time = {21} priority travel time = {0}
+time = {140}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-30.980790}	{array([[-1.9463679, -3.5910215]], dtype=float32)} overall travel time = {22} priority travel time = {0}
+time = {145}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-32.220493}	{array([[-1.9473299, -3.5927649]], dtype=float32)} overall travel time = {24} priority travel time = {0}
+time = {150}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-34.885304}	{array([[-1.9504703, -3.603382 ]], dtype=float32)} overall travel time = {24} priority travel time = {0}
+time = {155}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-36.844471}	{array([[-1.9528831, -3.613406 ]], dtype=float32)} overall travel time = {25} priority travel time = {0}
+time = {160}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-38.469479}	{array([[-1.9558376, -3.6282198]], dtype=float32)} overall travel time = {27} priority travel time = {0}
+time = {165}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-41.181353}	{array([[-1.9570268, -3.634022 ]], dtype=float32)} overall travel time = {27} priority travel time = {0}
+time = {170}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-43.281693}	{array([[-1.9574896, -3.6354191]], dtype=float32)} overall travel time = {28} priority travel time = {0}
+time = {175}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-45.590534}	{array([[-1.9592048, -3.6457415]], dtype=float32)} overall travel time = {29} priority travel time = {0}
+time = {180}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-47.433181}	{array([[-1.959889 , -3.6490507]], dtype=float32)} overall travel time = {31} priority travel time = {0}
+time = {185}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-50.249060}	{array([[-1.9608232, -3.653619 ]], dtype=float32)} overall travel time = {32} priority travel time = {0}
+time = {190}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-52.680975}	{array([[-1.962122, -3.660543]], dtype=float32)} overall travel time = {32} priority travel time = {0}
+time = {195}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-55.153354}	{array([[-1.9628748, -3.6640296]], dtype=float32)} overall travel time = {33} priority travel time = {0}
+time = {200}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-57.187786}	{array([[-1.9633766, -3.6678908]], dtype=float32)} overall travel time = {35} priority travel time = {0}
+time = {205}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-60.293246}	{array([[-1.9640869, -3.6716459]], dtype=float32)} overall travel time = {36} priority travel time = {0}
+time = {210}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-63.035086}	{array([[-1.9643638, -3.6736667]], dtype=float32)} overall travel time = {36} priority travel time = {0}
+time = {215}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-65.579273}	{array([[-1.9648467, -3.6764977]], dtype=float32)} overall travel time = {37} priority travel time = {0}
+time = {220}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-68.057766}	{array([[-1.9649453, -3.6773787]], dtype=float32)} overall travel time = {38} priority travel time = {0}
+time = {225}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-70.960307}	{array([[-1.9651682, -3.678168 ]], dtype=float32)} overall travel time = {40} priority travel time = {0}
+time = {230}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-74.032439}	{array([[-1.9653614, -3.6794636]], dtype=float32)} overall travel time = {40} priority travel time = {0}
+time = {235}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-76.991103}	{array([[-1.965455 , -3.6799593]], dtype=float32)} overall travel time = {41} priority travel time = {0}
+time = {240}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-79.427812}	{array([[-1.9655018, -3.6804183]], dtype=float32)} overall travel time = {43} priority travel time = {0}
+time = {245}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-83.070523}	{array([[-1.9655981, -3.680688 ]], dtype=float32)} overall travel time = {44} priority travel time = {0}
+time = {250}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-86.139956}	{array([[-1.9656171, -3.6808805]], dtype=float32)} overall travel time = {44} priority travel time = {0}
+time = {255}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-89.156227}	{array([[-1.9656781, -3.681065 ]], dtype=float32)} overall travel time = {45} priority travel time = {0}
+time = {260}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-92.181726}	{array([[-1.9656937, -3.6810932]], dtype=float32)} overall travel time = {46} priority travel time = {0}
+time = {265}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-95.317861}	{array([[-1.9657189, -3.68114  ]], dtype=float32)} overall travel time = {48} priority travel time = {0}
+time = {270}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-98.947026}	{array([[-1.9657418, -3.6811795]], dtype=float32)} overall travel time = {48} priority travel time = {0}
+time = {275}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-102.237027}	{array([[-1.9657577, -3.6811905]], dtype=float32)} overall travel time = {49} priority travel time = {0}
+time = {280}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-105.146139}	{array([[-1.9657587, -3.6812084]], dtype=float32)} overall travel time = {51} priority travel time = {0}
+time = {285}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-109.165893}	{array([[-1.9657675, -3.6812139]], dtype=float32)} overall travel time = {52} priority travel time = {0}
+time = {290}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-112.616170}	{array([[-1.9657735, -3.6812093]], dtype=float32)} overall travel time = {52} priority travel time = {0}
+time = {295}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-116.226948}	{array([[-1.9657757, -3.681215 ]], dtype=float32)} overall travel time = {53} priority travel time = {0}
+time = {300}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-170.499648}	{array([[-9.653554, -3.721519]], dtype=float32)} overall travel time = {88} priority travel time = {33}
+time = {308}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-77.998501}	{array([[-2.0619624, -5.317974 ]], dtype=float32)} overall travel time = {121} priority travel time = {67}
+time = {313}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-60.152504}	{array([[-2.0619707, -5.3179793]], dtype=float32)} overall travel time = {163} priority travel time = {108}
+time = {318}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-46.768089}	{array([[-2.0639906, -5.3191104]], dtype=float32)} overall travel time = {207} priority travel time = {153}
+time = {323}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-34.299867}	{array([[-2.067912 , -5.3214345]], dtype=float32)} overall travel time = {253} priority travel time = {199}
+time = {328}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-22.753020}	{array([[-2.0634515, -5.3189235]], dtype=float32)} overall travel time = {300} priority travel time = {245}
+time = {333}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-16.820897}	{array([[-2.0830908, -5.3296704]], dtype=float32)} overall travel time = {342} priority travel time = {288}
+time = {338}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-9.887018}	{array([[-2.6015577, -5.5573254]], dtype=float32)} overall travel time = {381} priority travel time = {327}
+time = {343}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-5.220460}	{array([[-2.962749 , -5.6571717]], dtype=float32)} overall travel time = {416} priority travel time = {362}
+time = {348}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-2.875527}	{array([[-3.429733, -5.340313]], dtype=float32)} overall travel time = {445} priority travel time = {391}
+time = {353}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-12.640165}	{array([[-4.656042 , -4.2552056]], dtype=float32)} overall travel time = {456} priority travel time = {393}
+time = {361}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-10.670590}	{array([[-5.892532 , -4.1218967]], dtype=float32)} overall travel time = {469} priority travel time = {406}
+time = {369}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-6.221412}	{array([[-3.5655248, -4.8070173]], dtype=float32)} overall travel time = {486} priority travel time = {423}
+time = {374}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-6.378266}	{array([[-3.7197387, -5.2727966]], dtype=float32)} overall travel time = {507} priority travel time = {444}
+time = {379}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-6.024895}	{array([[-3.7333682, -5.172157 ]], dtype=float32)} overall travel time = {529} priority travel time = {466}
+time = {384}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-7.315477}	{array([[-3.9227567, -5.126543 ]], dtype=float32)} overall travel time = {547} priority travel time = {484}
+time = {389}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-8.111138}	{array([[-2.9770658, -5.8928356]], dtype=float32)} overall travel time = {565} priority travel time = {501}
+time = {394}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-10.546700}	{array([[-3.1887712, -5.9631543]], dtype=float32)} overall travel time = {578} priority travel time = {514}
+time = {399}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-11.880616}	{array([[-3.2243016, -5.9572973]], dtype=float32)} overall travel time = {589} priority travel time = {526}
+time = {404}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-14.598750}	{array([[-3.4347446, -5.841294 ]], dtype=float32)} overall travel time = {595} priority travel time = {532}
+time = {409}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-19.329321}	{array([[-3.8498597, -5.477015 ]], dtype=float32)} overall travel time = {596} priority travel time = {533}
+time = {414}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-20.911654}	{array([[-3.5132139, -5.7744594]], dtype=float32)} overall travel time = {597} priority travel time = {534}
+time = {419}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-22.686787}	{array([[-3.4872959, -5.7928376]], dtype=float32)} overall travel time = {598} priority travel time = {535}
+time = {424}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-24.033067}	{array([[-3.5163717, -5.7745566]], dtype=float32)} overall travel time = {599} priority travel time = {536}
+time = {429}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-26.319210}	{array([[-3.5017066, -5.781512 ]], dtype=float32)} overall travel time = {600} priority travel time = {537}
+time = {434}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-28.262818}	{array([[-3.4100702, -5.8562274]], dtype=float32)} overall travel time = {601} priority travel time = {538}
+time = {439}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-30.226965}	{array([[-3.3261857, -5.8995123]], dtype=float32)} overall travel time = {602} priority travel time = {539}
+time = {444}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-31.585411}	{array([[-3.3999188, -5.8643436]], dtype=float32)} overall travel time = {603} priority travel time = {540}
+time = {449}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-34.199484}	{array([[-3.4208364, -5.843632 ]], dtype=float32)} overall travel time = {604} priority travel time = {541}
+time = {454}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-36.185339}	{array([[-3.4610147, -5.814054 ]], dtype=float32)} overall travel time = {605} priority travel time = {542}
+time = {459}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-38.421329}	{array([[-3.3654299, -5.888266 ]], dtype=float32)} overall travel time = {606} priority travel time = {543}
+time = {464}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-40.049075}	{array([[-3.365551 , -5.8648353]], dtype=float32)} overall travel time = {607} priority travel time = {544}
+time = {469}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-42.967152}	{array([[-3.403811, -5.854367]], dtype=float32)} overall travel time = {608} priority travel time = {545}
+time = {474}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-45.305969}	{array([[-3.3826544, -5.871289 ]], dtype=float32)} overall travel time = {609} priority travel time = {546}
+time = {479}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-47.614427}	{array([[-3.3829846, -5.8654056]], dtype=float32)} overall travel time = {610} priority travel time = {547}
+time = {484}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-49.506413}	{array([[-3.388762, -5.860957]], dtype=float32)} overall travel time = {611} priority travel time = {548}
+time = {489}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-52.542273}	{array([[-3.3701713, -5.8711047]], dtype=float32)} overall travel time = {612} priority travel time = {549}
+time = {494}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-55.078554}	{array([[-3.3473375, -5.8848886]], dtype=float32)} overall travel time = {613} priority travel time = {550}
+time = {499}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-57.554929}	{array([[-3.3097234, -5.916179 ]], dtype=float32)} overall travel time = {614} priority travel time = {551}
+time = {504}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-59.816669}	{array([[-3.1702085, -5.9543567]], dtype=float32)} overall travel time = {615} priority travel time = {552}
+time = {509}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-62.981394}	{array([[-3.3260932, -5.900107 ]], dtype=float32)} overall travel time = {616} priority travel time = {553}
+time = {514}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-65.778965}	{array([[-3.2652462, -5.9258227]], dtype=float32)} overall travel time = {617} priority travel time = {554}
+time = {519}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-68.569873}	{array([[-3.293795 , -5.9224577]], dtype=float32)} overall travel time = {618} priority travel time = {555}
+time = {524}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-71.060227}	{array([[-3.369301 , -5.8692994]], dtype=float32)} overall travel time = {619} priority travel time = {556}
+time = {529}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-74.064731}	{array([[-3.2611442, -5.9230456]], dtype=float32)} overall travel time = {620} priority travel time = {557}
+time = {534}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-77.264967}	{array([[-3.2961395, -5.904515 ]], dtype=float32)} overall travel time = {621} priority travel time = {558}
+time = {539}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-80.119947}	{array([[-3.140297 , -5.9766064]], dtype=float32)} overall travel time = {622} priority travel time = {559}
+time = {544}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-83.206695}	{array([[-3.1908033, -5.945017 ]], dtype=float32)} overall travel time = {623} priority travel time = {560}
+time = {549}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-86.517560}	{array([[-3.1393495, -5.9548793]], dtype=float32)} overall travel time = {624} priority travel time = {561}
+time = {554}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-89.700398}	{array([[-3.2645748, -5.9295683]], dtype=float32)} overall travel time = {625} priority travel time = {562}
+time = {559}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-92.921579}	{array([[-3.1882432, -5.9491873]], dtype=float32)} overall travel time = {626} priority travel time = {563}
+time = {564}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-95.707913}	{array([[-3.30626  , -5.8962903]], dtype=float32)} overall travel time = {627} priority travel time = {564}
+time = {569}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-99.571611}	{array([[-3.1066978, -5.9803095]], dtype=float32)} overall travel time = {628} priority travel time = {565}
+time = {574}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-102.914112}	{array([[-3.279177 , -5.9041085]], dtype=float32)} overall travel time = {629} priority travel time = {566}
+time = {579}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-106.092078}	{array([[-3.1430547, -5.950746 ]], dtype=float32)} overall travel time = {630} priority travel time = {567}
+time = {584}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-109.652366}	{array([[-3.140656, -5.946545]], dtype=float32)} overall travel time = {631} priority travel time = {568}
+time = {589}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-113.491754}	{array([[-3.0975685, -5.971773 ]], dtype=float32)} overall travel time = {632} priority travel time = {569}
+time = {594}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-117.056633}	{array([[-3.1471493, -5.947752 ]], dtype=float32)} overall travel time = {633} priority travel time = {570}
+time = {599}	action = {0}	current_phase = {1}	next_phase = {0}	reward = {-120.711628}	{array([[-3.1328475, -5.9516625]], dtype=float32)} overall travel time = {634} priority travel time = {571}
+time = {604}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-177.520035}	{array([[-12.879342 ,  -6.0878935]], dtype=float32)} overall travel time = {676} priority travel time = {571}
+time = {612}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-144.267187}	{array([[-16.215624,  -4.920866]], dtype=float32)} overall travel time = {678} priority travel time = {573}
+time = {620}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-103.100693}	{array([[-12.879638,  -6.086701]], dtype=float32)} overall travel time = {699} priority travel time = {574}
+time = {628}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-75.969590}	{array([[-14.105335 ,  -5.8354244]], dtype=float32)} overall travel time = {702} priority travel time = {577}
+time = {636}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-49.730759}	{array([[-12.87645 ,  -6.084773]], dtype=float32)} overall travel time = {723} priority travel time = {577}
+time = {644}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-33.676061}	{array([[-13.809855,  -5.925212]], dtype=float32)} overall travel time = {726} priority travel time = {580}
+time = {652}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-19.425044}	{array([[-12.653602,  -5.973108]], dtype=float32)} overall travel time = {748} priority travel time = {580}
+time = {660}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-9.550865}	{array([[-4.2084603, -5.603511 ]], dtype=float32)} overall travel time = {764} priority travel time = {580}
+time = {665}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-1.627404}	{array([[-3.7481928, -5.381706 ]], dtype=float32)} overall travel time = {807} priority travel time = {580}
+time = {670}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-1.153087}	{array([[-2.9116817, -4.7450447]], dtype=float32)} overall travel time = {849} priority travel time = {580}
+time = {675}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-0.110646}	{array([[-2.9362197, -4.752002 ]], dtype=float32)} overall travel time = {893} priority travel time = {580}
+time = {680}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {1.468697}	{array([[-2.9050932, -4.69314  ]], dtype=float32)} overall travel time = {945} priority travel time = {580}
+time = {685}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {0.136021}	{array([[-3.592947 , -4.8672256]], dtype=float32)} overall travel time = {994} priority travel time = {580}
+time = {690}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-16.438894}	{array([[-8.798143, -4.364187]], dtype=float32)} overall travel time = {1003} priority travel time = {589}
+time = {698}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-10.201573}	{array([[-6.4429083, -3.886454 ]], dtype=float32)} overall travel time = {1025} priority travel time = {589}
+time = {706}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-4.985698}	{array([[-3.843346, -4.885194]], dtype=float32)} overall travel time = {1056} priority travel time = {589}
+time = {711}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-3.667401}	{array([[-4.9192142, -4.992099 ]], dtype=float32)} overall travel time = {1097} priority travel time = {589}
+time = {716}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-5.576199}	{array([[-3.8259559, -4.963909 ]], dtype=float32)} overall travel time = {1132} priority travel time = {589}
+time = {721}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-20.669085}	{array([[-7.675422 , -6.3968096]], dtype=float32)} overall travel time = {1144} priority travel time = {601}
+time = {729}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-15.108869}	{array([[-10.027314 ,  -5.0659814]], dtype=float32)} overall travel time = {1160} priority travel time = {601}
+time = {737}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-4.735618}	{array([[-3.166933 , -4.8611917]], dtype=float32)} overall travel time = {1191} priority travel time = {601}
+time = {742}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-6.991091}	{array([[-3.6014557, -5.0377245]], dtype=float32)} overall travel time = {1223} priority travel time = {601}
+time = {747}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-23.942180}	{array([[-7.6017365, -5.9280386]], dtype=float32)} overall travel time = {1235} priority travel time = {614}
+time = {755}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-17.653354}	{array([[-11.713244,  -5.753022]], dtype=float32)} overall travel time = {1257} priority travel time = {614}
+time = {763}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-6.437116}	{array([[-4.3716784, -5.0828257]], dtype=float32)} overall travel time = {1282} priority travel time = {614}
+time = {768}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-8.326065}	{array([[-4.801051, -5.379547]], dtype=float32)} overall travel time = {1311} priority travel time = {614}
+time = {773}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-25.272668}	{array([[-8.928722 , -6.0834217]], dtype=float32)} overall travel time = {1325} priority travel time = {627}
+time = {781}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-22.471867}	{array([[-11.888075 ,  -5.8226895]], dtype=float32)} overall travel time = {1338} priority travel time = {627}
+time = {789}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-18.703044}	{array([[-7.943631 , -6.3253374]], dtype=float32)} overall travel time = {1350} priority travel time = {639}
+time = {797}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-21.715565}	{array([[-12.069784 ,  -5.7643886]], dtype=float32)} overall travel time = {1367} priority travel time = {639}
+time = {805}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-21.840999}	{array([[-6.252771 , -6.1683474]], dtype=float32)} overall travel time = {1380} priority travel time = {651}
+time = {813}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-23.264897}	{array([[-12.51233  ,  -5.9042478]], dtype=float32)} overall travel time = {1394} priority travel time = {651}
+time = {821}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-23.502817}	{array([[-7.9162345, -6.3157625]], dtype=float32)} overall travel time = {1403} priority travel time = {660}
+time = {829}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-23.207144}	{array([[-12.62257  ,  -5.9680405]], dtype=float32)} overall travel time = {1417} priority travel time = {660}
+time = {837}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-24.951174}	{array([[-7.74564  , -6.3313923]], dtype=float32)} overall travel time = {1427} priority travel time = {669}
+time = {845}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-22.431877}	{array([[-12.80653  ,  -6.0584917]], dtype=float32)} overall travel time = {1445} priority travel time = {669}
+time = {853}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-22.312552}	{array([[-7.38293  , -6.2314596]], dtype=float32)} overall travel time = {1455} priority travel time = {679}
+time = {861}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-16.915719}	{array([[-12.768535,  -6.039931]], dtype=float32)} overall travel time = {1471} priority travel time = {679}
+time = {869}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-13.072051}	{array([[-5.2528567, -5.8170214]], dtype=float32)} overall travel time = {1475} priority travel time = {679}
+time = {874}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-23.745345}	{array([[-7.1174135, -6.251032 ]], dtype=float32)} overall travel time = {1485} priority travel time = {689}
+time = {882}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-22.873297}	{array([[-12.784052,  -6.048726]], dtype=float32)} overall travel time = {1502} priority travel time = {689}
+time = {890}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-23.117977}	{array([[-6.3669457, -5.899146 ]], dtype=float32)} overall travel time = {1518} priority travel time = {706}
+time = {898}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-18.748132}	{array([[-12.573981 ,  -5.9305916]], dtype=float32)} overall travel time = {1531} priority travel time = {706}
+time = {906}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-8.708031}	{array([[-10.235876, -10.601124]], dtype=float32)} overall travel time = {1548} priority travel time = {706}
+time = {911}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-9.367858}	{array([[-11.129406, -11.304434]], dtype=float32)} overall travel time = {1565} priority travel time = {706}
+time = {916}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-21.637189}	{array([[-11.585161, -11.386455]], dtype=float32)} overall travel time = {1583} priority travel time = {724}
+time = {924}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-24.291023}	{array([[-21.38968 ,  -8.595555]], dtype=float32)} overall travel time = {1604} priority travel time = {724}
+time = {932}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-27.603025}	{array([[-11.963974, -11.842832]], dtype=float32)} overall travel time = {1620} priority travel time = {739}
+time = {940}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-21.189278}	{array([[-20.855639,  -9.072296]], dtype=float32)} overall travel time = {1641} priority travel time = {739}
+time = {948}	action = {0}	current_phase = {0}	next_phase = {1}	reward = {-7.981593}	{array([[-11.747976, -11.808252]], dtype=float32)} overall travel time = {1667} priority travel time = {739}
+time = {953}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-22.292090}	{array([[-11.907183, -11.477515]], dtype=float32)} overall travel time = {1687} priority travel time = {758}
+time = {961}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-27.580681}	{array([[-20.867666,  -8.994467]], dtype=float32)} overall travel time = {1704} priority travel time = {758}
+time = {969}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-31.001478}	{array([[-12.543474, -11.808579]], dtype=float32)} overall travel time = {1718} priority travel time = {771}
+time = {977}	action = {1}	current_phase = {1}	next_phase = {0}	reward = {-27.423553}	{array([[-21.545757,  -8.41032 ]], dtype=float32)} overall travel time = {1736} priority travel time = {771}
+time = {985}	action = {1}	current_phase = {0}	next_phase = {1}	reward = {-27.188080}	{array([[-12.228724, -11.857331]], dtype=float32)} overall travel time = {1750} priority travel time = {786}

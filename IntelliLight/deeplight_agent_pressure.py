@@ -356,25 +356,35 @@ class DeeplightAgentPressure(NetworkAgent):
 
         for x in range(len(mapOfCars)):
             for y in range(len(mapOfCars[0])):
+                # if mapOfCars[x][y][0] != 0:
+                #     print(mapOfCars[x][y])
+                if mapOfCars[x][y][0] > 0:
+                    # print("X:", x, " Y: ", y)
+                    if (y < 75 and x < 72):
+                        # print("Approaching North")
+                        cardinal_nums_positive[0] += self.distanceImportance(72 - x)
+                    elif (x > 75 and y < 72):
+                        # print("Approaching East")
+                        cardinal_nums_positive[1] += self.distanceImportance(72 - y)
+                    elif (y > 75 and x > 77):
+                        # print("Approaching South")
+                        cardinal_nums_positive[2] += self.distanceImportance(x - 77)
+                    elif (x < 75 and y > 77):
+                        # print("Approaching West")
+                        cardinal_nums_positive[3] += self.distanceImportance(y - 77)
 
-                if mapOfCars[x][y][0] == 1:
-                    if (y > 76 and x < 75):
-                        cardinal_nums_positive[0] += self.distanceImportance(y - 76)
-                    elif (x > 77 and y > 75):
-                        cardinal_nums_positive[1] += self.distanceImportance(x - 77)
-                    elif (y < 70 and x > 75):
-                        cardinal_nums_positive[2] += self.distanceImportance(70 - y)
-                    elif (x < 70 and y < 75):
-                        cardinal_nums_positive[3] += self.distanceImportance(70 - x)
-
-                    if (y > 76 and x > 75):
-                        cardinal_nums_negative[0] += self.distanceImportance(y - 76)
-                    elif (x > 77 and y < 75):
-                        cardinal_nums_negative[1] += self.distanceImportance(x - 77)
-                    elif (y < 70 and x < 75):
-                        cardinal_nums_negative[2] += self.distanceImportance(70 - y)
-                    elif (x < 70 and y > 75):
-                        cardinal_nums_negative[3] += self.distanceImportance(70 - x)
+                    if (y < 75 and x > 77):
+                        # print("Leaving North")
+                        cardinal_nums_negative[0] += self.distanceImportance(x - 77)
+                    elif (x > 75 and y > 77):
+                        # print("Leaving East")
+                        cardinal_nums_negative[1] += self.distanceImportance(y - 77)
+                    elif (y > 75 and x < 72):
+                        # print("Leaving South")
+                        cardinal_nums_negative[2] += self.distanceImportance(72 - x)
+                    elif (x < 75 and y < 72):
+                        # print("Leaving West")
+                        cardinal_nums_negative[3] += self.distanceImportance(72 - y)
                     # print(x, ",", y)
 
         # print("N, E, S, W")
@@ -387,7 +397,7 @@ class DeeplightAgentPressure(NetworkAgent):
         NS_pressure = max(pressures[0] + pressures[2],0)
         EW_pressure = max(pressures[1] + pressures[3],0)
 
-        best_phase = int((NS_pressure - EW_pressure) < 0)
+        best_phase = int((NS_pressure - EW_pressure) > 0)
 
 
         # print(NS_pressure)
